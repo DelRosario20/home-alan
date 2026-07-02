@@ -1,0 +1,45 @@
+---
+title: "Ecuador multiplicó por 8 su tasa de homicidios en solo seis años"
+description: "De 5.8 por 100.000 habitantes en 2017 a 45.7 en 2023: la reversión de dos décadas de avances en una sola serie."
+date: 2026-07-01
+categories: [seguridad, datos abiertos, R]
+---
+
+Ecuador pasó de ser uno de los países más seguros de la región a encabezar las tasas de homicidio de Sudamérica. La serie del Banco Mundial lo resume en un solo gráfico: veinte años de mejora sostenida (2002–2017) borrados en seis.
+
+```{r}
+#| label: grafico-homicidios
+#| warning: false
+#| message: false
+#| fig-width: 8
+#| fig-height: 5
+
+library(ggplot2)
+library(readr)
+
+datos <- read_csv("data/homicidios_ecuador_wb.csv", show_col_types = FALSE)
+
+ggplot(datos, aes(x = anio, y = tasa_homicidios)) +
+  geom_line(color = "#00857D", linewidth = 1.1) +
+  geom_point(color = "#00857D", size = 1.8) +
+  annotate("text", x = 2015, y = 40,
+           label = "Mínimo histórico: 5.8 (2017)\nMáximo: 45.7 (2023)",
+           hjust = 0, size = 3.4, color = "grey30") +
+  geom_vline(xintercept = 2017, linetype = "dashed", color = "grey60") +
+  labs(
+    title    = "Tasa de homicidios intencionales en Ecuador, 2000–2023",
+    subtitle = "Por cada 100.000 habitantes",
+    x = NULL, y = "Tasa por 100.000 hab.",
+    caption  = "Fuente: Banco Mundial (VC.IHR.PSRC.P5). Elaboración: Alan Del Rosario — delrosario20.github.io/home-alan"
+  ) +
+  theme_minimal(base_size = 12) +
+  theme(plot.caption = element_text(color = "grey45", size = 8))
+```
+
+## Tres lecturas rápidas
+
+La caída 2002–2017 fue sostenida y profunda: la tasa se redujo a menos de la mitad, tocando un mínimo de 5.8 — comparable entonces con Argentina o Chile. El quiebre llega después de 2019: entre 2020 y 2023 la tasa se multiplica casi por seis, el crecimiento más acelerado del hemisferio. Y la magnitud del 2023 (45.7) coloca al país en niveles que la literatura asocia con violencia vinculada a mercados ilícitos, no con criminalidad convencional — justamente la distinción que exploro en mi investigación sobre [homicidios instrumentales](../../projects/homicidios.qmd).
+
+---
+
+*Datos: [Banco Mundial — Intentional homicides](https://data.worldbank.org/indicator/VC.IHR.PSRC.P5?locations=EC). Código reproducible en este mismo repositorio.*

@@ -1,0 +1,40 @@
+# home-alan
+
+Sitio web personal y portafolio de proyectos de **Alan Del Rosario** — economía aplicada y análisis de datos, Ecuador.
+
+**Sitio en vivo:** https://delrosario20.github.io/home-alan/
+
+## Cómo está construido
+
+```
+Positron/Obsidian (Markdown + R) → Git/GitHub → Quarto → GitHub Pages
+```
+
+Este repositorio contiene únicamente el **sitio web** (páginas, posts, perfil). Cada investigación vive en su propio repositorio independiente (`proj-*`) y se vincula desde aquí.
+
+## Estructura
+
+- `index.qmd` — página de inicio (perfil + últimos posts)
+- `about.qmd` — sobre mí (ES/EN)
+- `projects/` — una página por proyecto de investigación
+- `posts/` — blog de análisis rápidos (una carpeta por post, con sus datos)
+- `_quarto.yml` — configuración del sitio
+- `styles.scss` — estilos propios
+- `_gobernanza/` — plan maestro, protocolo de calidad económica/econométrica, checklist de publicación y roles del equipo IA
+- `AGENTS.md` — reglas operativas para cualquier agente IA que trabaje en este repo
+
+## Control de calidad
+
+Nada se publica sin pasar el [protocolo de calidad](_gobernanza/PROTOCOLO_CALIDAD.md) (coherencia con teoría económica, datos con fuente oficial, reproducibilidad, revisión de cuatro ojos) y el [checklist de publicación](_gobernanza/CHECKLIST_PUBLICACION.md). Los errores detectados tras publicar se corrigen con fe de erratas visible, nunca en silencio.
+
+## Comandos
+
+```bash
+quarto preview          # vista previa local
+quarto render           # generar el sitio en _site/
+quarto publish gh-pages # publicar en GitHub Pages
+```
+
+## Licencia
+
+Contenido bajo [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/deed.es). Código bajo MIT.

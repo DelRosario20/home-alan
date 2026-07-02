@@ -1,0 +1,22 @@
+# --- Seguridad: NUNCA subir ---
+.Renviron
+.env
+CLAUDE.md
+.claude/
+_ai/
+
+# --- Output de Quarto (se regenera, no se versiona) ---
+/_site/
+/.quarto/
+
+# --- Basura de R y sistema ---
+.Rhistory
+.RData
+.Rproj.user/
+.DS_Store
+Thumbs.db
+
+# --- Obsidian (config local del vault) ---
+.obsidian/
+
+**/*.quarto_ipynb

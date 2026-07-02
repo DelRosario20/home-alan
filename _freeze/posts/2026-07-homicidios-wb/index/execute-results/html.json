@@ -1,0 +1,17 @@
+{
+  "hash": "e7d085cc0f9d826abeece4a47f8fb8f2",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"Ecuador multiplicó por 8 su tasa de homicidios en solo seis años\"\ndescription: \"De 5.8 por 100.000 habitantes en 2017 a 45.7 en 2023: la reversión de dos décadas de avances en una sola serie.\"\ndate: 2026-07-01\ncategories: [seguridad, datos abiertos, R]\n---\n\nEcuador pasó de ser uno de los países más seguros de la región a encabezar las tasas de homicidio de Sudamérica. La serie del Banco Mundial lo resume en un solo gráfico: veinte años de mejora sostenida (2002–2017) borrados en seis.\n\n\n::: {.cell}\n\n```{.r .cell-code}\nlibrary(ggplot2)\nlibrary(readr)\n\ndatos <- read_csv(\"data/homicidios_ecuador_wb.csv\", show_col_types = FALSE)\n\nggplot(datos, aes(x = anio, y = tasa_homicidios)) +\n  geom_line(color = \"#00857D\", linewidth = 1.1) +\n  geom_point(color = \"#00857D\", size = 1.8) +\n  annotate(\"text\", x = 2015, y = 40,\n           label = \"Mínimo histórico: 5.8 (2017)\\nMáximo: 45.7 (2023)\",\n           hjust = 0, size = 3.4, color = \"grey30\") +\n  geom_vline(xintercept = 2017, linetype = \"dashed\", color = \"grey60\") +\n  labs(\n    title    = \"Tasa de homicidios intencionales en Ecuador, 2000–2023\",\n    subtitle = \"Por cada 100.000 habitantes\",\n    x = NULL, y = \"Tasa por 100.000 hab.\",\n    caption  = \"Fuente: Banco Mundial (VC.IHR.PSRC.P5). Elaboración: Alan Del Rosario — delrosario20.github.io/home-alan\"\n  ) +\n  theme_minimal(base_size = 12) +\n  theme(plot.caption = element_text(color = \"grey45\", size = 8))\n```\n\n::: {.cell-output-display}\n![](index_files/figure-html/grafico-homicidios-1.png){width=768}\n:::\n:::\n\n\n## Tres lecturas rápidas\n\nLa caída 2002–2017 fue sostenida y profunda: la tasa se redujo a menos de la mitad, tocando un mínimo de 5.8 — comparable entonces con Argentina o Chile. El quiebre llega después de 2019: entre 2020 y 2023 la tasa se multiplica casi por seis, el crecimiento más acelerado del hemisferio. Y la magnitud del 2023 (45.7) coloca al país en niveles que la literatura asocia con violencia vinculada a mercados ilícitos, no con criminalidad convencional — justamente la distinción que exploro en mi investigación sobre [homicidios instrumentales](../../projects/homicidios.qmd).\n\n---\n\n*Datos: [Banco Mundial — Intentional homicides](https://data.worldbank.org/indicator/VC.IHR.PSRC.P5?locations=EC). Código reproducible en este mismo repositorio.*\n",
+    "supporting": [
+      "index_files"
+    ],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

@@ -1,0 +1,48 @@
+---
+title: "Alan Del Rosario"
+toc: false
+about:
+  template: trestles
+  image: perfil.jpg
+  image-shape: round
+  image-width: 14em
+  links:
+    - icon: github
+      text: GitHub
+      href: https://github.com/DelRosario20
+    - icon: linkedin
+      text: LinkedIn
+      href: https://linkedin.com/in/alan-del-rosario-695b4423a
+    - icon: envelope
+      text: Email
+      href: mailto:delrosarioaj@outlook.com
+listing:
+  id: ultimos-posts
+  contents: posts
+  sort: "date desc"
+  type: default
+  max-items: 3
+  fields: [date, title, description]
+---
+
+**Economista en formación · Universidad Estatal de Milagro (UNEMI)**
+
+## Sobre mí
+
+Trabajo con datos: econometría aplicada, microdatos y visualización. Transformo información compleja en evidencia útil para la toma de decisiones, con experiencia en los sectores público, privado y salud. He presentado investigaciones en congresos académicos sobre participación laboral, política de combustibles y remesas, y trabajo principalmente con fuentes oficiales de Ecuador (INEC, ENEMDU, Datos Abiertos).
+
+## Mis intereses
+
+- Econometría aplicada y microdatos (ENEMDU, registros administrativos)
+- Economía laboral y sociodemografía
+- Seguridad, bienestar y política pública
+- Visualización de datos y reportes BI
+
+## About me
+
+Economics student (8th semester, UNEMI, Ecuador) focused on applied econometrics and data analysis. I work primarily with Ecuadorian microdata using R, STATA and Python, turning complex data into evidence for decision-making.
+
+## Últimas publicaciones
+
+::: {#ultimos-posts}
+:::

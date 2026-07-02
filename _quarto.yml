@@ -1,0 +1,38 @@
+project:
+  type: website
+  output-dir: _site
+  render:
+    - "**/*.qmd"   # solo .qmd se publican; los .md (README, AGENTS, gobernanza) son documentación interna del repo
+
+website:
+  title: "Alan Del Rosario"
+  site-url: https://delrosario20.github.io/home-alan/
+  description: "Economía aplicada y análisis de datos — Ecuador"
+  navbar:
+    left:
+      - href: index.qmd
+        text: Inicio
+      - href: projects/index.qmd
+        text: Proyectos
+      - href: posts/index.qmd
+        text: Blog
+      - href: cv.pdf
+        text: CV
+    right:
+      - icon: github
+        href: https://github.com/DelRosario20
+      - icon: linkedin
+        href: https://linkedin.com/in/alan-del-rosario-695b4423a
+  page-footer:
+    center: "© 2026 Alan Del Rosario · Hecho con [Quarto](https://quarto.org)"
+
+format:
+  html:
+    theme:
+      light: [cosmo, styles.scss]
+      dark: [darkly, styles.scss]
+    toc: true
+    lang: es
+
+execute:
+  freeze: auto

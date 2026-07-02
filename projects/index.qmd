@@ -1,0 +1,10 @@
+---
+title: "Proyectos"
+subtitle: "Investigación aplicada con datos de Ecuador"
+toc: false
+listing:
+  contents: "."
+  sort: "date desc"
+  type: grid
+  fields: [title, description, date]
+---

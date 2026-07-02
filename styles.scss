@@ -1,0 +1,17 @@
+/*-- scss:defaults --*/
+// Identidad visual provisional — se define en Fase 1
+$primary: #00857D;
+$font-family-sans-serif: "Segoe UI", system-ui, sans-serif;
+
+/*-- scss:rules --*/
+.navbar-brand {
+  font-weight: 700;
+}
+
+h1, h2 {
+  font-weight: 700;
+}
+
+.quarto-title-block .description {
+  color: #5a6570;
+}

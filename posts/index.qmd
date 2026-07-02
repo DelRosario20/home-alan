@@ -1,0 +1,11 @@
+---
+title: "Blog"
+subtitle: "Análisis rápidos con datos reales"
+toc: false
+listing:
+  contents: "."
+  sort: "date desc"
+  type: default
+  fields: [date, title, description, categories]
+  categories: true
+---

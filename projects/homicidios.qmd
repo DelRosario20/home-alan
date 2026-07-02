@@ -1,0 +1,22 @@
+---
+title: "Motivaciones Letales y Desigualdad: Homicidios Instrumentales en Ecuador (2014–2024)"
+description: "Evidencia empírica con microdatos de Datos Abiertos Ecuador. Logit penalizado (Firth)."
+date: 2026-07-01
+categories: [investigación, microdatos, seguridad]
+---
+
+::: {.callout-note}
+**En migración.** Versión 2.0 en preparación, actualizada a partir del manuscrito original (2025). El repo con código y datos se publicará al completar la migración.
+:::
+
+## Resumen
+
+Estudio de los determinantes de los homicidios instrumentales (vinculados a crimen organizado) frente a los homicidios convencionales en Ecuador, período 2014–2024, usando microdatos de registros administrativos y logit penalizado de Firth.
+
+**Palabras clave:** crimen organizado, educación, homicidio, logit penalizado, violencia estructural, Ecuador.
+
+## Materiales
+
+- Paper (PDF) — *próximamente*
+- Dashboard interactivo — *próximamente*
+- Repositorio (código + datos) — *próximamente*
