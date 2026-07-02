@@ -65,7 +65,7 @@ El push guarda el código fuente; el publish actualiza el sitio visible. Son dos
 
 - [ ] Copiar tu `cv.pdf` a la raíz de esta carpeta (el enlace "CV" de la barra superior ya lo espera)
 - [ ] Reemplazar `perfil.jpg` (placeholder gris) por tu foto real, con el mismo nombre de archivo
-- [ ] Ejecutar Pasos 1–4
+- [/] Ejecutar Pasos 1–4 (Pasos 1 y 2 completados; Pasos 3 y 4 pendientes de configurar el remoto en GitHub)
 - [ ] Poner el link del sitio en tu perfil de GitHub y LinkedIn
 
 ## Si algo falla — dónde mirar
