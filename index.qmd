@@ -1,21 +1,6 @@
 ---
-title: "Alan Del Rosario"
+title: ""
 toc: false
-about:
-  template: trestles
-  image: perfil.jpg
-  image-shape: round
-  image-width: 14em
-  links:
-    - icon: github
-      text: GitHub
-      href: https://github.com/DelRosario20
-    - icon: linkedin
-      text: LinkedIn
-      href: https://linkedin.com/in/alan-del-rosario-695b4423a
-    - icon: envelope
-      text: Email
-      href: mailto:delrosarioaj@outlook.com
 listing:
   id: ultimos-posts
   contents: posts
@@ -25,22 +10,55 @@ listing:
   fields: [date, title, description]
 ---
 
-**Economista en formación · Universidad Estatal de Milagro (UNEMI)**
+::: {.row}
 
-## Sobre mí
+::: {.col-md-4}
+### Información Personal
+
+<div class="text-center text-md-start mb-4">
+  <img src="perfil.jpg" class="img-fluid rounded-circle" style="width: 150px; height: 150px; object-fit: cover; margin-bottom: 20px; border: 3px solid var(--bs-primary);" alt="Alan Del Rosario">
+  
+  <h3 class="mt-2" style="font-weight: 700;">Alan Del Rosario</h3>
+  <p class="text-muted mb-2" style="font-size: 1.1rem;">Economista en formación</p>
+  <p class="mb-3"><strong>Universidad Estatal de Milagro (UNEMI)</strong></p>
+  
+  <div style="display: flex; gap: 20px; font-size: 1.6rem;">
+    <a href="https://github.com/DelRosario20" target="_blank" style="color: inherit; text-decoration: none;" title="GitHub"><i class="bi bi-github"></i></a>
+    <a href="https://linkedin.com/in/alan-del-rosario-695b4423a" target="_blank" style="color: inherit; text-decoration: none;" title="LinkedIn"><i class="bi bi-linkedin"></i></a>
+    <a href="mailto:delrosarioaj@outlook.com" style="color: inherit; text-decoration: none;" title="Email"><i class="bi bi-envelope"></i></a>
+  </div>
+</div>
+:::
+
+::: {.col-md-4}
+### Sobre mí
 
 Trabajo con datos: econometría aplicada, microdatos y visualización. Transformo información compleja en evidencia útil para la toma de decisiones, con experiencia en los sectores público, privado y salud. He presentado investigaciones en congresos académicos sobre participación laboral, política de combustibles y remesas, y trabajo principalmente con fuentes oficiales de Ecuador (INEC, ENEMDU, Datos Abiertos).
 
-## Mis intereses
+#### **Mis intereses**
 
 - Econometría aplicada y microdatos (ENEMDU, registros administrativos)
 - Economía laboral y sociodemografía
 - Seguridad, bienestar y política pública
 - Visualización de datos y reportes BI
+:::
 
-## About me
+::: {.col-md-4}
+### About me
 
-Economics student (8th semester, UNEMI, Ecuador) focused on applied econometrics and data analysis. I work primarily with Ecuadorian microdata using R, STATA and Python, turning complex data into evidence for decision-making.
+I work with data: applied econometrics, microdata, and data visualization. I transform complex information into useful evidence for decision-making, with experience in the public, private, and healthcare sectors. I have presented my research at academic conferences on labor force participation, fuel policy, and remittances, working primarily with official data sources from Ecuador (INEC, ENEMDU, Open Data).
+
+#### **My interests**
+
+- Applied econometrics and microdata (ENEMDU, administrative records)
+- Labor economics and sociodemographics
+- Security, welfare, and public policy
+- Data visualization and BI reporting
+:::
+
+:::
+
+<hr class="my-5">
 
 ## Últimas publicaciones
 
