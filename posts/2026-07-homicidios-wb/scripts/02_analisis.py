@@ -138,8 +138,15 @@ def plot(rows: list[dict[str, float]], metrics: dict[str, float | int | list[int
         color="#566573",
         fontsize=8.7,
     )
-    fig.savefig(OUTPUTS / "tasa_homicidios_ecuador.svg", bbox_inches="tight")
+    svg_path = OUTPUTS / "tasa_homicidios_ecuador.svg"
+    fig.savefig(svg_path, bbox_inches="tight")
     plt.close(fig)
+    # Matplotlib añade espacios finales a rutas multilínea; normalizarlos mantiene
+    # el artefacto generado compatible con `git diff --check`.
+    svg = svg_path.read_text(encoding="utf-8")
+    svg_path.write_text(
+        "\n".join(line.rstrip() for line in svg.splitlines()) + "\n", encoding="utf-8"
+    )
 
 
 def main() -> None:
