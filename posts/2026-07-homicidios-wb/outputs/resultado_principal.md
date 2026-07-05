@@ -1,0 +1,1 @@
+Entre el mínimo observado de **5,79** en **2017** y el máximo de **45,72** en **2023**, la tasa resultó **7,9 veces** la del mínimo (**690,0%** más). La diferencia fue de **39,94 homicidios por cada 100.000 habitantes**.

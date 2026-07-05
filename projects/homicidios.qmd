@@ -1,22 +1,96 @@
 ---
-title: "Motivaciones Letales y Desigualdad: Homicidios Instrumentales en Ecuador (2014–2024)"
-description: "Evidencia empírica con microdatos de Datos Abiertos Ecuador. Logit penalizado (Firth)."
-date: 2026-07-01
+title: "Homicidios instrumentales en Ecuador (2014–2024)"
+description: "Migración controlada de una investigación sobre homicidios instrumentales y convencionales."
+date: 2026-07-05
 categories: [investigación, microdatos, seguridad]
+toc: true
 ---
 
-::: {.callout-note}
-**En migración.** Versión 2.0 en preparación, actualizada a partir del manuscrito original (2025). El repo con código y datos se publicará al completar la migración.
+::: {.project-hero}
+::: {.project-kicker}
+PROYECTO INSIGNIA · ETAPA DE PREPARACIÓN
 :::
 
-## Resumen
+# Motivaciones letales y desigualdad
 
-Estudio de los determinantes de los homicidios instrumentales (vinculados a crimen organizado) frente a los homicidios convencionales en Ecuador, período 2014–2024, usando microdatos de registros administrativos y logit penalizado de Firth.
+La futura versión 2.0 migrará el manuscrito original a un repositorio reproducible. Esta página expone desde ahora el contrato de calidad y el flujo de entrega; **no adelanta resultados que todavía no han sido reejecutados**.
+:::
 
-**Palabras clave:** crimen organizado, educación, homicidio, logit penalizado, violencia estructural, Ecuador.
+::: {.callout-warning icon=false}
+**No aprobado para publicación como resultado de investigación.** El paper, el dashboard y el repositorio `proj-homicidios` se habilitarán únicamente después de reproducir los microdatos, cerrar las seis puertas del protocolo, completar la revisión independiente y recibir aprobación de Alan.
+:::
 
-## Materiales
+## Así funcionará el repositorio real
 
-- Paper (PDF) — *próximamente*
-- Dashboard interactivo — *próximamente*
-- Repositorio (código + datos) — *próximamente*
+::: {.workflow-grid}
+::: {.workflow-card}
+### 01 · Teoría
+
+Pregunta, mecanismo esperado, estimando y límites causales definidos antes de modelar.
+:::
+
+::: {.workflow-card}
+### 02 · Datos
+
+Fuente oficial, diccionario, cobertura y decisiones de acceso documentadas; datos sensibles fuera de Git.
+:::
+
+::: {.workflow-card}
+### 03 · Proceso
+
+Scripts numerados registran filtros, observaciones antes/después y tratamientos explícitos de faltantes.
+:::
+
+::: {.workflow-card}
+### 04 · Modelos
+
+Supuestos, especificación principal y al menos una alternativa de robustez ejecutadas desde la misma fuente.
+:::
+
+::: {.workflow-card}
+### 05 · Productos
+
+Paper y dashboard consumen los mismos outputs; ninguna cifra se copia entre documentos.
+:::
+
+::: {.workflow-card}
+### 06 · Puerta editorial
+
+Render limpio, cuatro ojos, reposo de 24 horas y aprobación de Alan antes de publicar.
+:::
+:::
+
+## Arquitectura prevista
+
+```text
+proj-homicidios/
+├── README.md              # pregunta, hallazgo validado y reproducción
+├── data/
+│   ├── README.md          # fuente, acceso, licencia y diccionario
+│   └── clean/             # solo derivados publicables
+├── R/
+│   ├── 01_limpieza.R
+│   ├── 02_descriptivos.R
+│   ├── 03_modelos.R
+│   └── 04_robustez.R
+├── outputs/               # tablas y figuras generadas, nunca editadas a mano
+├── paper/paper.qmd
+├── dashboard/dashboard.qmd
+└── qa/CHECKLIST.md
+```
+
+## Evidencia operativa disponible hoy
+
+El [post piloto con la serie del Banco Mundial](../posts/2026-07-homicidios-wb/index.qmd) demuestra, a escala reducida, el circuito que usará el proyecto: API oficial → datos versionados → validaciones → indicadores → gráfico → texto generado → checklist → render. Es deliberadamente descriptivo y no sustituye el análisis con microdatos.
+
+## Estado de entregables
+
+| Entregable | Estado | Condición para habilitarlo |
+|---|---|---|
+| Pre-registro ligero | Pendiente de Alan | Pregunta, marco teórico y alcance aprobados |
+| Repositorio `proj-homicidios` | No creado | Estructura y acceso a datos confirmados |
+| Paper v2.0 | No disponible | Modelos reejecutados y auditados |
+| Dashboard | No disponible | Consistencia automática con el paper |
+| Publicación | Bloqueada | Cuatro ojos + checklist + aprobación de Alan |
+
+Esta transparencia evita que un enlace “próximamente” se confunda con evidencia ya terminada y permite evaluar el sistema por controles verificables, no por promesas.

@@ -1,6 +1,8 @@
 /*-- scss:defaults --*/
 // Identidad visual provisional — se define en Fase 1
 $primary: #00857D;
+$body-color: #17324D;
+$link-color: #087F73;
 $font-family-sans-serif: "Segoe UI", system-ui, sans-serif;
 
 /*-- scss:rules --*/
@@ -14,4 +16,58 @@ h1, h2 {
 
 .quarto-title-block .description {
   color: #5a6570;
+}
+
+.project-hero {
+  padding: clamp(1.5rem, 4vw, 3rem);
+  margin: 0 0 2rem;
+  border-radius: 1.25rem;
+  background: linear-gradient(135deg, #0b3b4a 0%, #087f73 100%);
+  color: #fff;
+  box-shadow: 0 1rem 2.5rem rgba(11, 59, 74, 0.16);
+}
+
+.project-hero h1 {
+  margin: .35rem 0 .75rem;
+  color: #fff;
+}
+
+.project-kicker {
+  color: #9de3d7;
+  font-size: .78rem;
+  font-weight: 800;
+  letter-spacing: .12em;
+}
+
+.workflow-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+  margin: 1.25rem 0 2.25rem;
+}
+
+.workflow-card {
+  padding: 1.2rem;
+  border: 1px solid #dce6e8;
+  border-radius: .9rem;
+  background: #fff;
+  box-shadow: 0 .35rem 1.2rem rgba(23, 50, 77, .06);
+}
+
+.workflow-card h3 {
+  margin-top: 0;
+  color: #087f73;
+  font-size: 1rem;
+}
+
+.workflow-card p {
+  margin-bottom: 0;
+  color: #425466;
+  font-size: .93rem;
+}
+
+@media (max-width: 900px) {
+  .workflow-grid {
+    grid-template-columns: 1fr;
+  }
 }

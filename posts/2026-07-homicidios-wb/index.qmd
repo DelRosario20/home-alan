@@ -1,45 +1,66 @@
 ---
-title: "Ecuador multiplicó por 8 su tasa de homicidios en solo seis años"
-description: "De 5.8 por 100.000 habitantes en 2017 a 45.7 en 2023: la reversión de dos décadas de avances en una sola serie."
-date: 2026-07-01
-categories: [seguridad, datos abiertos, R]
+title: "La ruptura de la tendencia de homicidios en Ecuador, en una serie reproducible"
+description: "Una lectura descriptiva y auditable del cambio entre el mínimo observado de 2017 y el máximo de 2023."
+date: 2026-07-05
+categories: [seguridad, Banco Mundial, reproducibilidad]
+image: outputs/tasa_homicidios_ecuador.svg
+toc: true
+status: "borrador para revisión"
 ---
 
-Ecuador pasó de ser uno de los países más seguros de la región a encabezar las tasas de homicidio de Sudamérica. La serie del Banco Mundial lo resume en un solo gráfico: veinte años de mejora sostenida (2002–2017) borrados en seis.
+::: {.callout-warning icon=false}
+## Estado editorial
 
-```{r}
-#| label: grafico-homicidios
-#| warning: false
-#| message: false
-#| fig-width: 8
-#| fig-height: 5
+**Borrador técnico, no aprobado para publicación.** La cadena reproducible y las comprobaciones automáticas fueron ejecutadas; faltan la revisión independiente de cuatro ojos y la aprobación explícita de Alan.
+:::
 
-library(ggplot2)
-library(readr)
+## Qué pregunta responde
 
-datos <- read_csv("data/homicidios_ecuador_wb.csv", show_col_types = FALSE)
+¿Cómo cambió la tasa de homicidios intencionales reportada para Ecuador entre 2000 y 2023, y qué tan grande fue la diferencia entre el mínimo y el máximo observados?
 
-ggplot(datos, aes(x = anio, y = tasa_homicidios)) +
-  geom_line(color = "#00857D", linewidth = 1.1) +
-  geom_point(color = "#00857D", size = 1.8) +
-  annotate("text", x = 2015, y = 40,
-           label = "Mínimo histórico: 5.8 (2017)\nMáximo: 45.7 (2023)",
-           hjust = 0, size = 3.4, color = "grey30") +
-  geom_vline(xintercept = 2017, linetype = "dashed", color = "grey60") +
-  labs(
-    title    = "Tasa de homicidios intencionales en Ecuador, 2000–2023",
-    subtitle = "Por cada 100.000 habitantes",
-    x = NULL, y = "Tasa por 100.000 hab.",
-    caption  = "Fuente: Banco Mundial (VC.IHR.PSRC.P5). Elaboración: Alan Del Rosario — delrosario20.github.io/home-alan"
-  ) +
-  theme_minimal(base_size = 12) +
-  theme(plot.caption = element_text(color = "grey45", size = 8))
+Este es un análisis **descriptivo**. No estima el efecto de una política, del crimen organizado ni de otra causa específica. Por ello no formula una hipótesis causal: documenta magnitud, temporalidad, cobertura y límites de una serie oficial.
+
+## El resultado
+
+{{< include outputs/resultado_principal.md >}}
+
+![Evolución de la tasa de homicidios intencionales en Ecuador.](outputs/tasa_homicidios_ecuador.svg){fig-alt="Serie de la tasa de homicidios en Ecuador. Desciende hasta 5,79 en 2017 y aumenta hasta 45,72 en 2023. No hay observaciones entre 2003 y 2006."}
+
+La comparación resume una ruptura temporal muy grande, pero **no identifica por sí sola qué la explica**. Convertir la coincidencia temporal con cambios sociales o criminales en una conclusión causal requeriría otro diseño, variables explicativas y pruebas de robustez.
+
+## Qué puede —y qué no puede— concluirse
+
+La serie permite afirmar que el máximo observado es muy superior al mínimo observado y ubicar ambos años. No permite atribuir el aumento a una causa, comparar tipos de homicidio ni inferir diferencias provinciales: el indicador es nacional y agregado.
+
+Además, el Banco Mundial no reporta valores para 2003–2006 dentro del período solicitado. Esos años **no fueron interpolados ni completados**. La línea conecta 2002 con 2007 únicamente como recurso visual; no representa observaciones intermedias.
+
+## Trazabilidad del dato
+
+{{< include outputs/trazabilidad.md >}}
+
+- **Fuente:** [Banco Mundial, World Development Indicators](https://data.worldbank.org/indicator/VC.IHR.PSRC.P5?locations=EC).
+- **Indicador:** `VC.IHR.PSRC.P5`, homicidios intencionales por cada 100.000 habitantes.
+- **Cobertura solicitada:** Ecuador, 2000–2025; último dato no nulo: 2023.
+- **Fecha de descarga:** 5 de julio de 2026; la API reportó actualización al 1 de julio de 2026.
+- **Descarga reproducible:** [script 01](scripts/01_descarga.py) mediante la [API oficial del Banco Mundial](https://api.worldbank.org/v2/country/ECU/indicator/VC.IHR.PSRC.P5?format=json&per_page=100&date=2000:2025).
+
+## Cómo reproducirlo
+
+Desde la raíz de este post:
+
+```powershell
+./reproducir.ps1
 ```
 
-## Tres lecturas rápidas
+La cadena descarga la fuente, valida el esquema, calcula los indicadores, genera el gráfico, ejecuta pruebas unitarias, verifica el lenguaje y renderiza el documento. Los resultados textuales se insertan desde archivos generados por código: no se transcriben manualmente.
 
-La caída 2002–2017 fue sostenida y profunda: la tasa se redujo a menos de la mitad, tocando un mínimo de 5.8 — comparable entonces con Argentina o Chile. El quiebre llega después de 2019: entre 2020 y 2023 la tasa se multiplica casi por seis, el crecimiento más acelerado del hemisferio. Y la magnitud del 2023 (45.7) coloca al país en niveles que la literatura asocia con violencia vinculada a mercados ilícitos, no con criminalidad convencional — justamente la distinción que exploro en mi investigación sobre [homicidios instrumentales](../../projects/homicidios.qmd).
+## Límites
 
----
+- Los datos agregados nacionales ocultan heterogeneidad territorial y demográfica.
+- La fuente compila estadísticas reportadas por los países; sus revisiones pueden cambiar la serie.
+- Cuatro años del intervalo no tienen observación y no se imputan.
+- La comparación mínimo–máximo describe extremos observados; no constituye una estimación causal ni un pronóstico.
 
-*Datos: [Banco Mundial — Intentional homicides](https://data.worldbank.org/indicator/VC.IHR.PSRC.P5?locations=EC). Código reproducible en este mismo repositorio.*
+## Registro de calidad
+
+El detalle de las puertas cerradas y pendientes consta en el [checklist de esta pieza](qa/CHECKLIST.md). La metodología completa del portafolio está en el [Protocolo de Calidad](../../../_gobernanza/PROTOCOLO_CALIDAD.md).

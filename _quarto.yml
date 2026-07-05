@@ -8,6 +8,7 @@ website:
   title: "Alan Del Rosario"
   site-url: https://delrosario20.github.io/home-alan/
   description: "Economía aplicada y análisis de datos — Ecuador"
+  search: true
   navbar:
     left:
       - href: index.qmd
@@ -33,6 +34,8 @@ format:
       dark: [darkly, styles.scss]
     toc: true
     lang: es
+    code-copy: true
+    smooth-scroll: true
 
 execute:
   freeze: auto

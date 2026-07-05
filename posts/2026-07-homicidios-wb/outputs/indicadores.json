@@ -1,0 +1,18 @@
+{
+  "anio_minimo": 2017,
+  "tasa_minima": 5.79,
+  "anio_maximo": 2023,
+  "tasa_maxima": 45.72,
+  "multiplicador_min_max": 7.9,
+  "variacion_min_max_pct": 690.0,
+  "diferencia_puntos": 39.94,
+  "observaciones": 20,
+  "anios_sin_dato": [
+    2003,
+    2004,
+    2005,
+    2006,
+    2024,
+    2025
+  ]
+}

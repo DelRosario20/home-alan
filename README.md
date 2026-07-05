@@ -35,6 +35,16 @@ quarto render           # generar el sitio en _site/
 quarto publish gh-pages # publicar en GitHub Pages
 ```
 
+## Demostración reproducible
+
+El post piloto de homicidios implementa el flujo completo a pequeña escala con una fuente oficial: descarga por API → validación → indicadores → gráfico → pruebas → verificación → render.
+
+```powershell
+./posts/2026-07-homicidios-wb/reproducir.ps1
+```
+
+Los artefactos derivados se versionan junto con el código que los produce. El checklist conserva por separado la evidencia técnica y las dos autorizaciones editoriales que ningún script puede sustituir: revisión independiente y aprobación de Alan.
+
 ## Licencia
 
 Contenido bajo [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/deed.es). Código bajo MIT.
