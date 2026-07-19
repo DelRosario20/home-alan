@@ -2,6 +2,7 @@
 title: "La ruptura de la tendencia de homicidios en Ecuador, en una serie reproducible"
 description: "Una lectura descriptiva y auditable del cambio entre el mínimo observado de 2017 y el máximo de 2023."
 date: 2026-07-05
+draft: true
 categories: [seguridad, Banco Mundial, reproducibilidad]
 image: outputs/tasa_homicidios_ecuador.svg
 toc: true

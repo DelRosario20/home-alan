@@ -1,0 +1,1 @@
+El quiebre seleccionado es **2019**. La pendiente estimada antes de esa fecha es **-1,42 puntos por año**; después es **+9,31**. La tasa observada alcanza **45,72** en 2023, **66,8%** por encima de 2022. Entre 2020 y 2023, el crecimiento anual compuesto es **80,2%**.

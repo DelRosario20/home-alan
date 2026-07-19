@@ -1,74 +1,106 @@
 ---
 title: ""
 toc: false
-listing:
-  id: ultimos-posts
-  contents: posts
-  sort: "date desc"
-  type: default
-  max-items: 3
-  fields: [date, title, description]
+page-layout: full
 ---
 
-::: {.columns}
+<h1 class="visually-hidden">Alan Del Rosario</h1>
 
-::: {.column width="30%"}
-### Información Personal
+::: {.home-profile}
+::: {.home-profile__main}
+<p class="eyebrow eyebrow--ink">PERFIL</p>
 
-<div class="text-center text-md-start mb-4">
-<img src="perfil.jpg" class="img-fluid rounded-circle" style="width: 150px; height: 150px; object-fit: cover; margin-bottom: 20px; border: 3px solid var(--bs-primary);" alt="Alan Del Rosario">
+## Investigo problemas económicos y sociales de Ecuador desde la evidencia disponible.
 
-<h3 class="mt-2" style="font-weight: 700;">Alan Del Rosario</h3>
-<p class="text-muted mb-2" style="font-size: 1.1rem;">Economista en formación</p>
-<p class="mb-3"><strong>Universidad Estatal de Milagro (UNEMI)</strong></p>
+Me interesa convertir preguntas públicas en análisis verificables: entender de dónde sale el dato, qué permite afirmar, qué límites tiene y cómo puede comunicarse sin perder rigor. Mi trabajo se mueve entre investigación económica, análisis de datos, visualización ejecutiva y documentación reproducible.
 
-<div style="display: flex; gap: 20px; font-size: 1.6rem;">
-<a href="https://github.com/DelRosario20" target="_blank" style="color: inherit; text-decoration: none;" title="GitHub"><i class="bi bi-github"></i></a>
-<a href="https://linkedin.com/in/alan-del-rosario-695b4423a" target="_blank" style="color: inherit; text-decoration: none;" title="LinkedIn"><i class="bi bi-linkedin"></i></a>
-<a href="mailto:delrosarioaj@outlook.com" style="color: inherit; text-decoration: none;" title="Email"><i class="bi bi-envelope"></i></a>
+::: {.home-actions}
+[Ver casos](projects/index.qmd){.btn .btn-primary .btn-lg} [Conocer mi perfil](about.qmd){.btn .btn-outline-dark .btn-lg}
+:::
+:::
+
+::: {.home-profile__aside}
+<p class="home-profile__label">Líneas de interés</p>
+
+<ul class="focus-list">
+  <li><span>Seguridad y violencia</span><small>Series, cambios de régimen y lectura territorial.</small></li>
+  <li><span>Mercado laboral y bienestar</span><small>Microdatos, desigualdad y trayectorias sociales.</small></li>
+  <li><span>Finanzas públicas y coyuntura</span><small>Indicadores macro, riesgo país y sostenibilidad.</small></li>
+  <li><span>Datos abiertos</span><small>Fuentes oficiales, trazabilidad y visualización pública.</small></li>
+</ul>
+:::
+:::
+
+::: {.home-rail aria-label="Accesos principales del portafolio"}
+::: {.home-rail__track}
+<a href="projects/index.html"><span>Casos</span><strong>Preguntas aplicadas</strong></a>
+<a href="research/index.html"><span>Investigación</span><strong>Método y evidencia</strong></a>
+<a href="bi/index.html"><span>Tableros</span><strong>Indicadores ejecutivos</strong></a>
+<a href="posts/index.html"><span>Notas</span><strong>Lecturas breves</strong></a>
+<a href="projects/index.html"><span>Casos</span><strong>Preguntas aplicadas</strong></a>
+<a href="research/index.html"><span>Investigación</span><strong>Método y evidencia</strong></a>
+<a href="bi/index.html"><span>Tableros</span><strong>Indicadores ejecutivos</strong></a>
+<a href="posts/index.html"><span>Notas</span><strong>Lecturas breves</strong></a>
+:::
+:::
+
+::: {.home-showcase}
+::: {.home-showcase__intro}
+<p class="eyebrow eyebrow--ink">CASOS DESTACADOS</p>
+
+## Un caso, evidencia verificada
+
+Cada caso combina una investigación técnica y un tablero ejecutivo derivados de la misma evidencia. Explóralos a continuación.
+:::
+
+::: {.showcase-grid}
+<a class="showcase-card showcase-card--case" href="projects/index.html">
+  <span>Caso</span>
+  <strong>Cambio de régimen en los homicidios de Ecuador</strong>
+  <small>Pregunta, fuente, cobertura y productos del análisis.</small>
+</a>
+<a class="showcase-card showcase-card--research" href="research/index.html">
+  <span>Investigación</span>
+  <strong>Lectura técnica completa</strong>
+  <small>Método, procesamiento, robustez y límites del resultado.</small>
+</a>
+<a class="showcase-card showcase-card--dashboard" href="bi/index.html">
+  <span>Tablero</span>
+  <strong>Vista ejecutiva</strong>
+  <small>Indicadores, periodos y contexto para lectura rápida.</small>
+</a>
+:::
+:::
+
+::: {.home-contact}
+::: {.home-contact__content}
+::: {.home-contact__columns}
+<div>
+<h2>Contacto</h2>
+<img class="home-contact__logo" src="assets/img/logo-alan-portafolio.svg" alt="Alan Del Rosario">
+<p>Disponible para colaborar en investigación aplicada, análisis económico y visualización de datos públicos.</p>
 </div>
+
+<div>
+<h3>Canales</h3>
+<a href="https://github.com/DelRosario20">GitHub</a>
+<a href="https://linkedin.com/in/alan-del-rosario-695b4423a">LinkedIn</a>
+<a href="about.html">Perfil</a>
+</div>
+
+<div>
+<h3>Secciones</h3>
+<a href="projects/index.html">Casos</a>
+<a href="research/index.html">Investigación</a>
+<a href="bi/index.html">Tableros</a>
+</div>
+
+<div>
+<h3>Sitio</h3>
+<p>Portafolio académico y profesional desarrollado en Quarto para publicación estática.</p>
 </div>
 :::
 
-::: {.column width="3%"}
-<!-- Espacio -->
+<p class="image-credit">Imagen superior: Andean Highlands (Ecuador) banner, Wikimedia Commons, CC0 1.0.</p>
 :::
-
-::: {.column width="32%"}
-### Sobre mí
-
-Trabajo con datos: econometría aplicada, microdatos y visualización. Transformo información compleja en evidencia útil para la toma de decisiones, con experiencia en los sectores público, privado y salud. He presentado investigaciones en congresos académicos sobre participación laboral, política de combustibles y remesas, y trabajo principalmente con fuentes oficiales de Ecuador (INEC, ENEMDU, Datos Abiertos).
-
-#### **Mis intereses**
-
-- Econometría aplicada y microdatos (ENEMDU, registros administrativos)
-- Economía laboral y sociodemografía
-- Seguridad, bienestar y política pública
-- Visualización de datos y reportes BI
-:::
-
-::: {.column width="3%"}
-<!-- Espacio -->
-:::
-
-::: {.column width="32%"}
-### About me
-
-I work with data: applied econometrics, microdata, and data visualization. I transform complex information into useful evidence for decision-making, with experience in the public, private, and healthcare sectors. I have presented my research at academic conferences on labor force participation, fuel policy, and remittances, working primarily with official data sources from Ecuador (INEC, ENEMDU, Open Data).
-
-#### **My interests**
-
-- Applied econometrics and microdata (ENEMDU, administrative records)
-- Labor economics and sociodemographics
-- Security, welfare, and public policy
-- Data visualization and BI reporting
-:::
-
-:::
-
-<hr class="my-5">
-
-## Últimas publicaciones
-
-::: {#ultimos-posts}
 :::

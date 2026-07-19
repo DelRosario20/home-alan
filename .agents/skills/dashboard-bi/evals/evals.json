@@ -1,0 +1,23 @@
+{
+  "skill_name": "dashboard-bi",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Hazle el tablero al caso de remesas, la investigación ya está lista y los outputs están en su carpeta.",
+      "expected_output": "remesas-dashboard.qmd con commandbar completa, 3–5 KPIs patrón IRE (valor, periodo, dirección y banda interanual), visual principal con filtro OJS funcional sobre el CSV compartido, lectura ejecutiva y sección de gobierno con enlace persistente al Research.",
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "Agrega al dashboard de homicidios un filtro por provincia.",
+      "expected_output": "Detecta que la fuente actual es nacional-anual (no hay dato provincial en outputs) y NO dibuja un control decorativo: propone el contexto estático o el paso previo de generar outputs subnacionales.",
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "Los KPIs del tablero de homicidios se ven planos, mejóralos.",
+      "expected_output": "KPIs reformateados al patrón IRE (unidad, periodo, dirección del cambio y comparación interanual en banda inferior) manteniendo los valores exactamente iguales a los outputs; máximo 5 KPIs.",
+      "files": []
+    }
+  ]
+}

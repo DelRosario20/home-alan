@@ -22,6 +22,16 @@ Todo agente (Claude, Codex, Antigravity, o cualquier modelo futuro) que trabaje 
 7. Contenido del sitio en español (resúmenes en inglés donde el plan lo indica). Sitio 100% estático (GitHub Pages).
 8. **Definición de "terminado":** el render corre sin errores/warnings, los números fueron verificados contra el output, el checklist aplicable está completo y Alan aprobó. Antes de eso, nada está terminado.
 
+## Skills del repositorio
+
+El flujo "una idea → dos ejes" está operacionalizado en tres skills versionadas en `.agents/skills/` (espejo operativo para Claude Code en `.claude/skills/`, fuera de git):
+
+- `nuevo-caso` — alta de la tríada caso + investigación + tablero.
+- `articulo-academico` — eje académico, estilo boletín analítico del BCE.
+- `dashboard-bi` — eje ejecutivo, estilo IRE del MEF.
+
+Ante una tarea de alta o desarrollo de un eje, el agente sigue la skill correspondiente. Las referencias canónicas de estilo están en `_gobernanza/ARQUITECTURA_PORTAFOLIO.md` §2. Si una skill contradice la gobernanza, gana la gobernanza y se corrige la skill (en ambas copias).
+
 ## Regla de cuatro ojos
 
 Lo que un agente produce, lo revisa otro agente (o el mismo en una sesión limpia de verificación) ANTES de llegar a Alan: números re-ejecutados, señales de riesgo del protocolo revisadas una a una. El productor nunca es su propio único revisor.

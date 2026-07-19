@@ -1,0 +1,50 @@
+---
+title: "Título del caso"
+description: "Problema, cobertura y productos disponibles."
+date: YYYY-MM-DD
+draft: true
+categories: [caso, tema]
+image: ruta/a/imagen.png
+toc: false
+---
+
+::: {.project-hero}
+::: {.project-kicker}
+CASO · DOS PRODUCTOS · UNA EVIDENCIA
+:::
+
+# Hallazgo o pregunta que orienta el caso
+
+Alcance breve sin desarrollar contenido académico.
+
+::: {.project-actions}
+[Leer Research](tema-ejemplo-research.qmd){.btn .btn-light .btn-lg} [Abrir dashboard BI](tema-ejemplo-dashboard.qmd){.btn .btn-primary .btn-lg}
+:::
+:::
+
+::: {.callout-warning icon=false}
+**Estado editorial.** Reemplazar por el estado real. No retirar antes de checklist y aprobación de Alan.
+:::
+
+## Un resultado, dos lenguajes
+
+::: {.product-grid}
+::: {.product-card .product-research}
+### Research
+
+Pregunta, teoría, método, resultados, robustez y limitaciones.
+
+[Explorar Research →](tema-ejemplo-research.qmd)
+:::
+::: {.product-card .product-bi}
+### Business Intelligence
+
+KPIs, tendencia, desglose, alertas, actualización y fuente.
+
+[Abrir dashboard →](tema-ejemplo-dashboard.qmd)
+:::
+:::
+
+## Trazabilidad
+
+Describir la ruta real desde fuente y scripts hasta outputs compartidos.

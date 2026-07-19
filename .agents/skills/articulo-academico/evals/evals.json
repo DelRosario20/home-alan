@@ -1,0 +1,23 @@
+{
+  "skill_name": "articulo-academico",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Redacta la sección de resultados del artículo de homicidios usando los outputs que ya están en posts/2026-07-homicidios-wb/outputs/.",
+      "expected_output": "Sección Resultados que inserta tabla_modelo.md y resultado_modelo.md vía include, con prosa estilo boletín (cifra + interpretación en la misma oración) y sin ningún número escrito a mano.",
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "El artículo de remesas dice que 'la política migratoria de 2019 causó la caída de remesas'. Revísalo y corrígelo.",
+      "expected_output": "Detecta la afirmación causal sin justificación teórica y la reescribe en lenguaje de asociación citando PROTOCOLO_CALIDAD.md.",
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "Mejora las figuras del research de homicidios, se ven muy simples los captions.",
+      "expected_output": "Captions con patrón boletín BCE: título numerado, subtítulo de cobertura temporal y fig-alt que describe el patrón de los datos; sin regenerar cifras ni tocar los SVG fuente.",
+      "files": []
+    }
+  ]
+}

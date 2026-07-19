@@ -8,6 +8,8 @@ _ai/
 # --- Output de Quarto (se regenera, no se versiona) ---
 /_site/
 /.quarto/
+/tmp/
+/_freeze/site_libs/
 
 # --- Basura de R y sistema ---
 .Rhistory

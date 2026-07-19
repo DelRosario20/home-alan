@@ -1,0 +1,36 @@
+---
+title: ""
+pagetitle: "Investigación"
+toc: false
+page-layout: full
+listing:
+  id: research-list
+  contents:
+    - ../projects/*-research.qmd
+  sort: "date desc"
+  type: grid
+  grid-columns: 2
+  fields: [image, date, title, description, categories]
+---
+
+::: {.page-intro}
+::: {}
+<p class="eyebrow eyebrow--ink">INVESTIGACIÓN</p>
+
+# Investigación para comprender
+
+Papers y estudios reproducibles con espacio para teoría, metodología, resultados, robustez y límites. Esta ruta prioriza la lectura sostenida y la trazabilidad académica.
+:::
+
+::: {.page-intro__aside}
+**Qué vas a encontrar**
+<span>Pregunta, datos, método, resultados, robustez y límites, con trazabilidad completa.</span>
+:::
+:::
+
+::: {.catalog-shell}
+<div class="catalog-note"><strong>Cómo leer esta sección:</strong> cada investigación enlaza, cuando existe, su versión ejecutiva en Tableros. Uno complementa al otro; ninguno reemplaza al otro.</div>
+
+::: {#research-list}
+:::
+:::

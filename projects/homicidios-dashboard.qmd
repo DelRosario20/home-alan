@@ -1,0 +1,127 @@
+---
+title: "Homicidios en Ecuador"
+subtitle: "Executive Intelligence · actualización 2023"
+description: "Tablero ejecutivo con indicadores, trayectoria, diagnóstico y gobierno de la señal."
+author: "Alan Del Rosario"
+date: 2026-07-05
+draft: false
+lang: es
+categories: [business intelligence, dashboard, seguridad]
+image: ../posts/2026-07-homicidios-wb/outputs/figura_regimen.png
+format:
+  dashboard:
+    orientation: rows
+    scrolling: true
+    theme: cosmo
+    css: dashboard.css
+---
+
+<h1 class="visually-hidden">Homicidios en Ecuador</h1>
+
+::: {.dashboard-commandbar}
+::: {.dashboard-commandbar__identity}
+<span>ADR · BI LAB / SEGURIDAD</span>
+<strong>Homicidios en Ecuador</strong>
+<small>Actualización 2023</small>
+:::
+::: {.dashboard-commandbar__meta}
+<span><b>Cobertura</b> 2007–2023</span>
+<span><b>Frecuencia</b> Anual</span>
+<span><b>Fuente</b> Banco Mundial / UNODC</span>
+:::
+::: {.dashboard-commandbar__actions}
+[Investigación](homicidios-research.qmd) [Ver caso](homicidios.qmd) [Descargar CSV](../posts/2026-07-homicidios-wb/data/homicidios_ecuador_wb.csv){download="homicidios-ecuador.csv"}
+:::
+:::
+
+```{ojs}
+//| output: false
+serieCompleta = FileAttachment("../posts/2026-07-homicidios-wb/data/homicidios_ecuador_wb.csv").csv({typed: true})
+serieDashboard = serieCompleta.filter(d => d.anio >= 2007 && d.anio <= 2023)
+```
+
+## {.toolbar}
+
+```{ojs}
+viewof desde = Inputs.range([2007, 2023], {label: "Mostrar desde", step: 1, value: 2007})
+```
+
+```{ojs}
+//| output: false
+serieFiltrada = serieDashboard.filter(d => d.anio >= desde)
+```
+
+## Resumen ejecutivo {height=190}
+
+{{< include ../posts/2026-07-homicidios-wb/outputs/dashboard_kpis.md >}}
+
+## Tendencia principal {height=520}
+
+### Evolución filtrable {width=64%}
+
+```{ojs}
+Plot.plot({
+  width,
+  height: 360,
+  marginLeft: 58,
+  marginBottom: 42,
+  style: {background: "transparent", color: "#15263A", fontFamily: "Manrope, sans-serif"},
+  x: {label: null, tickFormat: d => `${d}`},
+  y: {grid: true, label: "Tasa por 100.000 habitantes"},
+  marks: [
+    Plot.ruleY([0], {stroke: "#CED9E5"}),
+    Plot.line(serieFiltrada, {x: "anio", y: "tasa_homicidios", stroke: "#0F766E", strokeWidth: 3, tip: true}),
+    Plot.dot(serieFiltrada, {x: "anio", y: "tasa_homicidios", fill: "#0F766E", r: 3, tip: true})
+  ]
+})
+```
+
+### Lectura ejecutiva {width=36%}
+
+::: {.executive-panel}
+#### Señal
+
+La trayectoria posterior a 2019 exige leer el presente como un régimen distinto, no como una oscilación alrededor del promedio histórico.
+
+#### Decisión informada
+
+Priorizar monitoreo de alta frecuencia y desagregación territorial. El agregado nacional sirve como alarma, no como mapa de intervención.
+
+#### Límite crítico
+
+El último dato comparable es 2023. Ninguna decisión sobre 2024–2026 debe presentarse como respaldada por esta serie.
+:::
+
+## Comparación y diagnóstico {height=520}
+
+### Variación anual {width=58%}
+
+![Cambios frente al año anterior](../posts/2026-07-homicidios-wb/outputs/figura_variaciones.svg){fig-alt="Variaciones anuales de la tasa de homicidios en Ecuador; los mayores aumentos se concentran entre 2021 y 2023."}
+
+### Calidad de la señal {width=42%}
+
+| Dimensión | Estado | Lectura |
+|---|---|---|
+| Fuente | Oficial | Banco Mundial / UNODC |
+| Cobertura | Nacional | No identifica focos territoriales |
+| Frecuencia | Anual | Insuficiente para alerta operativa |
+| Actualidad | Rezagada | Última observación: 2023 |
+| Causalidad | No identificada | El quiebre describe; no explica |
+
+::: {.callout-note icon=false}
+**Siguiente activo de datos:** registros provinciales o cantonales con fecha, modalidad y perfil de víctima. Ese nivel permitiría pasar de “cuánto cambió” a “dónde, para quién y bajo qué patrones”.
+:::
+
+## Gobierno y trazabilidad {height=440}
+
+### Selección del quiebre {width=55%}
+
+![BIC por año candidato](../posts/2026-07-homicidios-wb/outputs/figura_robustez.svg){fig-alt="Comparación del BIC para fechas candidatas de quiebre; 2019 presenta el valor mínimo."}
+
+### Semáforo ejecutivo {width=45%}
+
+{{< include ../posts/2026-07-homicidios-wb/outputs/dashboard_status.md >}}
+
+::: {.dashboard-footer-note}
+**Fuente:** Banco Mundial / UNODC. **Última observación:** 2023. **Productos vinculados:** [Investigación](homicidios-research.qmd) · [Caso](homicidios.qmd) · [Informe PDF](../output/pdf/research-homicidios-ecuador.pdf)
+:::

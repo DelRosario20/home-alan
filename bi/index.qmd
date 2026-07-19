@@ -1,0 +1,36 @@
+---
+title: ""
+pagetitle: "Tableros"
+toc: false
+page-layout: full
+listing:
+  id: bi-list
+  contents:
+    - ../projects/*-dashboard.qmd
+  sort: "date desc"
+  type: grid
+  grid-columns: 2
+  fields: [image, date, title, description, categories]
+---
+
+::: {.page-intro}
+::: {}
+<p class="eyebrow eyebrow--ink">TABLEROS</p>
+
+# Tableros para decidir
+
+Vistas ejecutivas derivadas de investigaciones verificadas. Aquí el foco cambia: indicadores primero, contexto visible, comparación rápida y límites operativos explícitos.
+:::
+
+::: {.page-intro__aside}
+**Qué vas a encontrar**
+<span>Indicadores clave, tendencia, desglose y fuente de los datos, siempre visibles.</span>
+:::
+:::
+
+::: {.catalog-shell}
+<div class="catalog-note"><strong>Cómo leer esta sección:</strong> cada tablero se orienta en segundos y mantiene acceso directo a la investigación que lo sustenta.</div>
+
+::: {#bi-list}
+:::
+:::

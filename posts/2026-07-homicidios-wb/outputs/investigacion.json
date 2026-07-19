@@ -1,0 +1,32 @@
+{
+  "muestra": {
+    "inicio": 2007,
+    "fin": 2023,
+    "n": 17
+  },
+  "tasa_2023": 45.72,
+  "variacion_2023_pct": 66.8,
+  "cagr_2020_2023_pct": 80.2,
+  "anio_quiebre": 2019,
+  "pendiente_pre": -1.42,
+  "pendiente_pre_ic95": [
+    -1.93,
+    -0.92
+  ],
+  "pendiente_post": 9.31,
+  "pendiente_post_ic95": [
+    6.59,
+    12.04
+  ],
+  "r2_ajustado_segmentado": 0.889,
+  "bic_segmentado": 94.67,
+  "bic_lineal": 130.67,
+  "ventaja_bic": 36.0,
+  "quiebre_log": 2019,
+  "loo_quiebres": {
+    "2019": 17
+  },
+  "loo_coincidencia_pct": 100.0,
+  "fuente": "Banco Mundial / UNODC, VC.IHR.PSRC.P5",
+  "ultima_observacion": 2023
+}

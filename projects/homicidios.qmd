@@ -1,96 +1,53 @@
 ---
-title: "Homicidios instrumentales en Ecuador (2014–2024)"
-description: "Migración controlada de una investigación sobre homicidios instrumentales y convencionales."
+title: "Cambio de régimen en los homicidios de Ecuador"
+description: "Investigación y tablero sobre el cambio de régimen en la tasa de homicidios de Ecuador, 2007–2023."
 date: 2026-07-05
-categories: [investigación, microdatos, seguridad]
-toc: true
+draft: false
+categories: [research, business intelligence, seguridad]
+image: ../posts/2026-07-homicidios-wb/outputs/figura_regimen.png
+toc: false
 ---
 
 ::: {.project-hero}
 ::: {.project-kicker}
-PROYECTO INSIGNIA · ETAPA DE PREPARACIÓN
+CASO DE ANÁLISIS · SEGURIDAD Y VIOLENCIA
 :::
 
-# Motivaciones letales y desigualdad
+# De descenso sostenido a aceleración
 
-La futura versión 2.0 migrará el manuscrito original a un repositorio reproducible. Esta página expone desde ahora el contrato de calidad y el flujo de entrega; **no adelanta resultados que todavía no han sido reejecutados**.
-:::
+Un análisis de la tasa de homicidios intencionales en Ecuador entre 2007 y 2023, disponible como investigación técnica y como tablero ejecutivo.
 
-::: {.callout-warning icon=false}
-**No aprobado para publicación como resultado de investigación.** El paper, el dashboard y el repositorio `proj-homicidios` se habilitarán únicamente después de reproducir los microdatos, cerrar las seis puertas del protocolo, completar la revisión independiente y recibir aprobación de Alan.
-:::
-
-## Así funcionará el repositorio real
-
-::: {.workflow-grid}
-::: {.workflow-card}
-### 01 · Teoría
-
-Pregunta, mecanismo esperado, estimando y límites causales definidos antes de modelar.
-:::
-
-::: {.workflow-card}
-### 02 · Datos
-
-Fuente oficial, diccionario, cobertura y decisiones de acceso documentadas; datos sensibles fuera de Git.
-:::
-
-::: {.workflow-card}
-### 03 · Proceso
-
-Scripts numerados registran filtros, observaciones antes/después y tratamientos explícitos de faltantes.
-:::
-
-::: {.workflow-card}
-### 04 · Modelos
-
-Supuestos, especificación principal y al menos una alternativa de robustez ejecutadas desde la misma fuente.
-:::
-
-::: {.workflow-card}
-### 05 · Productos
-
-Paper y dashboard consumen los mismos outputs; ninguna cifra se copia entre documentos.
-:::
-
-::: {.workflow-card}
-### 06 · Puerta editorial
-
-Render limpio, cuatro ojos, reposo de 24 horas y aprobación de Alan antes de publicar.
+::: {.project-actions}
+[Leer investigación](homicidios-research.qmd){.btn .btn-light .btn-lg} [Abrir tablero](homicidios-dashboard.qmd){.btn .btn-warning .btn-lg} [Informe PDF](../output/pdf/research-homicidios-ecuador.pdf){.btn .btn-outline-light .btn-lg}
 :::
 :::
 
-## Arquitectura prevista
+## Un hallazgo, dos lenguajes
 
-```text
-proj-homicidios/
-├── README.md              # pregunta, hallazgo validado y reproducción
-├── data/
-│   ├── README.md          # fuente, acceso, licencia y diccionario
-│   └── clean/             # solo derivados publicables
-├── R/
-│   ├── 01_limpieza.R
-│   ├── 02_descriptivos.R
-│   ├── 03_modelos.R
-│   └── 04_robustez.R
-├── outputs/               # tablas y figuras generadas, nunca editadas a mano
-├── paper/paper.qmd
-├── dashboard/dashboard.qmd
-└── qa/CHECKLIST.md
-```
+::: {.product-grid}
+::: {.product-card .product-research}
+### Investigación
 
-## Evidencia operativa disponible hoy
+Pregunta delimitada, definición del indicador, modelo segmentado, selección por BIC, intervalos robustos, sensibilidad, discusión y limitaciones.
 
-El [post piloto con la serie del Banco Mundial](../posts/2026-07-homicidios-wb/index.qmd) demuestra, a escala reducida, el circuito que usará el proyecto: API oficial → datos versionados → validaciones → indicadores → gráfico → texto generado → checklist → render. Es deliberadamente descriptivo y no sustituye el análisis con microdatos.
+[Explorar análisis →](homicidios-research.qmd)
+:::
 
-## Estado de entregables
+::: {.product-card .product-bi}
+### Tablero ejecutivo
 
-| Entregable | Estado | Condición para habilitarlo |
-|---|---|---|
-| Pre-registro ligero | Pendiente de Alan | Pregunta, marco teórico y alcance aprobados |
-| Repositorio `proj-homicidios` | No creado | Estructura y acceso a datos confirmados |
-| Paper v2.0 | No disponible | Modelos reejecutados y auditados |
-| Dashboard | No disponible | Consistencia automática con el paper |
-| Publicación | Bloqueada | Cuatro ojos + checklist + aprobación de Alan |
+KPIs de situación, velocidad de cambio, semáforo de calidad, lectura ejecutiva y siguiente activo de datos requerido.
 
-Esta transparencia evita que un enlace “próximamente” se confunda con evidencia ya terminada y permite evaluar el sistema por controles verificables, no por promesas.
+[Abrir tablero →](homicidios-dashboard.qmd)
+:::
+:::
+
+## Resultado central
+
+![La tendencia segmentada selecciona 2019 como cambio de pendiente.](../posts/2026-07-homicidios-wb/outputs/figura_regimen.svg){fig-alt="Tasa de homicidios de Ecuador entre 2007 y 2023 con un cambio de pendiente seleccionado en 2019."}
+
+{{< include ../posts/2026-07-homicidios-wb/outputs/landing_metrics.md >}}
+
+## Fuente de los datos
+
+Banco Mundial / UNODC, indicador de homicidios intencionales por 100.000 habitantes. La investigación, el tablero y el informe PDF citan siempre los mismos datos y resultados verificados: no hay cifras copiadas entre productos.

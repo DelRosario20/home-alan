@@ -1,0 +1,15 @@
+project:
+  type: default
+  output-dir: ../output/pdf
+
+format:
+  typst:
+    papersize: a4
+    toc: true
+    number-sections: true
+    fontsize: 10.5pt
+    margin:
+      x: 2.4cm
+      y: 2.2cm
+
+lang: es

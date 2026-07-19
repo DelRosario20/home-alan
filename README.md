@@ -14,10 +14,14 @@ Este repositorio contiene únicamente el **sitio web** (páginas, posts, perfil)
 
 ## Estructura
 
-- `index.qmd` — página de inicio (perfil + últimos posts)
-- `about.qmd` — sobre mí (ES/EN)
-- `projects/` — una página por proyecto de investigación
+- `index.qmd` — portada y propuesta híbrida Research/BI
+- `about.qmd` — perfil ES/EN
+- `projects/` — casos y sus dos salidas (`*-research.qmd`, `*-dashboard.qmd`)
+- `research/` — catálogo académico automático
+- `bi/` — catálogo de dashboards automático
 - `posts/` — blog de análisis rápidos (una carpeta por post, con sus datos)
+- `design-system/` — tokens, componentes y overrides de página
+- `_plantillas/portafolio/` — trío copiable Caso/Research/BI
 - `_quarto.yml` — configuración del sitio
 - `styles.scss` — estilos propios
 - `_gobernanza/` — plan maestro, protocolo de calidad económica/econométrica, checklist de publicación y roles del equipo IA
@@ -30,9 +34,9 @@ Nada se publica sin pasar el [protocolo de calidad](_gobernanza/PROTOCOLO_CALIDA
 ## Comandos
 
 ```bash
-quarto preview          # vista previa local
-quarto render           # generar el sitio en _site/
-quarto publish gh-pages # publicar en GitHub Pages
+quarto preview          # vista local: muestra borradores con su banner Draft
+quarto render           # salida de producción: excluye páginas draft
+quarto publish gh-pages # solo tras checklist, draft:false y aprobación de Alan
 ```
 
 ## Demostración reproducible
@@ -44,6 +48,8 @@ El post piloto de homicidios implementa el flujo completo a pequeña escala con 
 ```
 
 Los artefactos derivados se versionan junto con el código que los produce. El checklist conserva por separado la evidencia técnica y las dos autorizaciones editoriales que ningún script puede sustituir: revisión independiente y aprobación de Alan.
+
+La separación visual y funcional de Caso, Research y BI se define en [`_gobernanza/ARQUITECTURA_PORTAFOLIO.md`](_gobernanza/ARQUITECTURA_PORTAFOLIO.md).
 
 ## Licencia
 

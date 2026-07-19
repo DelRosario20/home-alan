@@ -1,0 +1,43 @@
+---
+title: "Título Research"
+subtitle: "Pregunta, país y periodo"
+description: "Descripción para el catálogo Research."
+author: "Alan Del Rosario"
+date: YYYY-MM-DD
+draft: true
+categories: [research, tema]
+image: ruta/a/imagen.png
+toc: true
+number-sections: true
+page-layout: article
+---
+
+::: {.callout-warning icon=false}
+**Estado editorial.** Mantener hasta cuatro ojos, checklist y aprobación de Alan.
+:::
+
+::: {.research-context-bar}
+[Research](tema-ejemplo-research.qmd) [Dashboard BI](tema-ejemplo-dashboard.qmd) [Caso](tema-ejemplo.qmd) [Paper PDF](ruta/al/paper.pdf)
+:::
+
+::: {.research-document}
+## Resumen
+
+## Pregunta y marco teórico
+
+## Datos
+
+## Método
+
+## Resultados
+
+## Robustez
+
+## Discusión
+
+## Limitaciones
+
+## Reproducibilidad
+
+## Referencias {.unnumbered}
+:::

@@ -1,0 +1,57 @@
+---
+title: "Título ejecutivo"
+subtitle: "Executive Intelligence · actualización AAAA"
+description: "Descripción para el catálogo BI."
+author: "Alan Del Rosario"
+date: YYYY-MM-DD
+draft: true
+lang: es
+categories: [business intelligence, dashboard, tema]
+image: ruta/a/imagen.png
+format:
+  dashboard:
+    orientation: rows
+    scrolling: true
+    theme: cosmo
+    css: dashboard.css
+---
+
+<h1 class="visually-hidden">Título ejecutivo del dashboard</h1>
+
+::: {.dashboard-commandbar}
+::: {.dashboard-commandbar__identity}
+<span>ADR · BI LAB</span>
+<strong>Dominio / Geografía</strong>
+:::
+::: {.dashboard-commandbar__meta}
+<span><b>Cobertura</b> periodo</span>
+<span><b>Frecuencia</b> frecuencia</span>
+<span><b>Fuente</b> fuente real</span>
+<span><b>Estado</b> estado editorial</span>
+:::
+::: {.dashboard-commandbar__actions}
+[Research](tema-ejemplo-research.qmd) [Ver caso](tema-ejemplo.qmd) [Descargar datos](ruta/a/datos.csv){download}
+:::
+:::
+
+Antes de publicar, sustituir esta nota por entradas OJS/Plotly funcionales conectadas a los outputs compartidos. No dibujar controles que no modifiquen una vista.
+
+## Resumen ejecutivo {height=190}
+
+Incluir entre tres y cinco value boxes generados desde outputs compartidos.
+
+## Tendencia principal {height=520}
+
+### Visual principal {width=64%}
+
+### Lectura ejecutiva {width=36%}
+
+## Comparación y diagnóstico {height=520}
+
+### Desglose {width=60%}
+
+### Calidad de la señal {width=40%}
+
+## Gobierno y trazabilidad {height=440}
+
+Fuente, actualización, cobertura, descarga y vínculo al Research.

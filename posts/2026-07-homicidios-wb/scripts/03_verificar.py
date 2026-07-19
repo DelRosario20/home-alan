@@ -18,6 +18,15 @@ def main() -> None:
         BASE / "outputs" / "resultado_principal.md",
         BASE / "outputs" / "trazabilidad.md",
         BASE / "outputs" / "tasa_homicidios_ecuador.svg",
+        BASE / "outputs" / "investigacion.json",
+        BASE / "outputs" / "figura_regimen.svg",
+        BASE / "outputs" / "figura_regimen.png",
+        BASE / "outputs" / "figura_variaciones.svg",
+        BASE / "outputs" / "figura_robustez.svg",
+        BASE / "outputs" / "resultado_modelo.md",
+        BASE / "outputs" / "landing_metrics.md",
+        BASE / "outputs" / "dashboard_status.md",
+        BASE / "outputs" / "tabla_candidatos.md",
     ]
     missing = [str(path.relative_to(BASE)) for path in required if not path.exists()]
     if missing:
@@ -34,6 +43,10 @@ def main() -> None:
 
     if "{{< include outputs/resultado_principal.md >}}" not in post:
         raise AssertionError("El post no incluye el resultado generado por código.")
+
+    research = json.loads((BASE / "outputs" / "investigacion.json").read_text(encoding="utf-8"))
+    if research["anio_quiebre"] != research["quiebre_log"]:
+        raise AssertionError("La especificación en niveles y la logarítmica no coinciden.")
 
     causal_terms = re.findall(r"\b(causó|provocó|debido a)\b", post, flags=re.I)
     if causal_terms:

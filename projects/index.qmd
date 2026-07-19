@@ -1,10 +1,34 @@
 ---
-title: "Proyectos"
-subtitle: "Investigación aplicada con datos de Ecuador"
+title: ""
+pagetitle: "Casos"
 toc: false
+page-layout: full
 listing:
-  contents: "."
+  id: case-list
+  contents:
+    - homicidios.qmd
   sort: "date desc"
   type: grid
-  fields: [title, description, date]
+  grid-columns: 2
+  fields: [image, date, title, description, categories]
 ---
+
+::: {.page-intro}
+::: {}
+<p class="eyebrow eyebrow--ink">PORTAFOLIO DE CASOS</p>
+
+# Biblioteca de casos
+
+Preguntas aplicadas sobre Ecuador, cada una con su investigación técnica y su tablero ejecutivo listos para explorar.
+:::
+
+::: {.page-intro__aside}
+**Evidencia consistente**
+<span>El informe y el tablero de cada caso citan siempre los mismos resultados verificados.</span>
+:::
+:::
+
+::: {.catalog-shell}
+::: {#case-list}
+:::
+:::

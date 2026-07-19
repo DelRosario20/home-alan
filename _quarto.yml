@@ -2,40 +2,61 @@ project:
   type: website
   output-dir: _site
   render:
-    - "**/*.qmd"   # solo .qmd se publican; los .md (README, AGENTS, gobernanza) son documentación interna del repo
+    - "*.qmd"
+    - "projects/*.qmd"
+    - "research/*.qmd"
+    - "bi/*.qmd"
+    - "posts/**/*.qmd"
+    - "!paper/**/*.qmd"
 
 website:
   title: "Alan Del Rosario"
   site-url: https://delrosario20.github.io/home-alan/
   description: "Economía aplicada y análisis de datos — Ecuador"
-  search: true
+  draft-mode: gone
+  search:
+    location: navbar
+    type: overlay
+  page-navigation: true
+  back-to-top-navigation: true
   navbar:
+    pinned: false
+    collapse-below: lg
     left:
       - href: index.qmd
         text: Inicio
       - href: projects/index.qmd
-        text: Proyectos
+        text: Casos
+      - href: research/index.qmd
+        text: Investigación
+      - href: bi/index.qmd
+        text: Tableros
       - href: posts/index.qmd
-        text: Blog
+        text: Notas
+    right:
       - href: cv.pdf
         text: CV
-    right:
+      - href: about.qmd
+        text: Perfil
       - icon: github
         href: https://github.com/DelRosario20
+        aria-label: GitHub
       - icon: linkedin
         href: https://linkedin.com/in/alan-del-rosario-695b4423a
+        aria-label: LinkedIn
   page-footer:
-    center: "© 2026 Alan Del Rosario · Hecho con [Quarto](https://quarto.org)"
+    left: "**Alan Del Rosario** · Economía aplicada y analítica"
+    right: "Sitio estático · Hecho con [Quarto](https://quarto.org)"
 
 format:
   html:
-    theme:
-      light: [cosmo, styles.scss]
-      dark: [darkly, styles.scss]
+    theme: [cosmo, styles.scss]
     toc: true
+    toc-title: "En esta página"
     lang: es
     code-copy: true
     smooth-scroll: true
+    link-external-newwindow: true
 
 execute:
   freeze: auto

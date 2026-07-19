@@ -1,0 +1,36 @@
+---
+title: "Perfil"
+subtitle: "Economía aplicada, microdatos y visualización"
+toc: false
+page-layout: article
+---
+
+::: {.about-grid}
+::: {.profile-panel}
+<img src="perfil.jpg" width="520" height="520" alt="Retrato de Alan Del Rosario">
+
+### Alan Del Rosario
+
+Economista en formación  
+**Universidad Estatal de Milagro (UNEMI)**
+
+[GitHub](https://github.com/DelRosario20) · [LinkedIn](https://linkedin.com/in/alan-del-rosario-695b4423a) · [Correo](mailto:delrosarioaj@outlook.com)
+:::
+
+::: {}
+## Sobre mí
+
+Trabajo con datos: econometría aplicada, microdatos y visualización. Transformo información compleja en evidencia útil para la toma de decisiones, con experiencia en los sectores público, privado y salud. He presentado investigaciones en congresos académicos sobre participación laboral, política de combustibles y remesas, y trabajo principalmente con fuentes oficiales de Ecuador.
+
+### Áreas de trabajo
+
+- Econometría aplicada y microdatos
+- Economía laboral y sociodemografía
+- Seguridad, bienestar y política pública
+- Visualización de datos y Business Intelligence
+
+## About me
+
+I work with applied econometrics, microdata, and data visualization. I turn complex information into useful evidence for decision-making, working primarily with official data sources from Ecuador.
+:::
+:::

@@ -1,0 +1,23 @@
+{
+  "skill_name": "nuevo-caso",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Quiero empezar un caso nuevo sobre remesas en Ecuador con datos del BCE, ya tengo la pregunta aprobada: ¿cambió la composición por país de origen entre 2015 y 2025? Deja lista la estructura en el portafolio.",
+      "expected_output": "Tríada projects/remesas.qmd, remesas-research.qmd y remesas-dashboard.qmd creada desde _plantillas/portafolio con el mismo slug, registrada en projects/index.qmd, con draft: true y aviso editorial; sin cifras inventadas.",
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "Tengo un script de STATA con un análisis de la PEA por cohortes que presenté en un congreso. Conviértelo en piezas del portafolio.",
+      "expected_output": "Alta de la tríada pea-cohortes con Puerta 0 confirmada antes de crear archivos, carpeta de outputs identificada, y nota de versión 2.0 respecto a la ponencia según PLAN_MAESTRO.",
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "Crea las páginas del caso de inflación de alimentos, pero todavía no tengo los datos descargados.",
+      "expected_output": "La skill se detiene en Puerta 0: sin fuente de datos real no se crea la tríada, o la crea dejando explícito que no hay outputs y que ningún número puede aparecer aún.",
+      "files": []
+    }
+  ]
+}
