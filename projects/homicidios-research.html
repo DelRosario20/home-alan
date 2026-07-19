@@ -1,0 +1,807 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.9.38">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Alan Del Rosario">
+<meta name="description" content="Investigación descriptiva con selección de quiebre, robustez y trazabilidad completa.">
+
+<title>De descenso sostenido a aceleración – Alan Del Rosario</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-80f07ddbe23ee81187e38ca1b465405f.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "language": {
+    "search-no-results-text": "No se han encontrado resultados",
+    "search-matching-documents-text": "documentos encontrados",
+    "search-copy-link-title": "Copiar el enlace en la búsqueda",
+    "search-hide-matches-text": "Ocultar resultados adicionales",
+    "search-more-match-text": "resultado adicional en este documento",
+    "search-more-matches-text": "resultados adicionales en este documento",
+    "search-clear-button-title": "Borrar",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancelar",
+    "search-submit-button-title": "Enviar",
+    "search-label": "Buscar"
+  }
+}</script>
+<style>html{ scroll-behavior: smooth; }</style>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+</head>
+
+<body class="nav-fixed quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="../index.html">
+    <span class="navbar-title">Alan Del Rosario</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Buscar"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Navegación de palanca" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../index.html"> 
+<span class="menu-text">Inicio</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../projects/index.html"> 
+<span class="menu-text">Casos</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../research/index.html"> 
+<span class="menu-text">Investigación</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../bi/index.html"> 
+<span class="menu-text">Tableros</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../posts/index.html"> 
+<span class="menu-text">Notas</span></a>
+  </li>  
+</ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../cv.pdf"> 
+<span class="menu-text">CV</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../about.html"> 
+<span class="menu-text">Perfil</span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/DelRosario20"> <i class="bi bi-github" role="img" aria-label="GitHub">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://linkedin.com/in/alan-del-rosario-695b4423a"> <i class="bi bi-linkedin" role="img" aria-label="LinkedIn">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+        
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">De descenso sostenido a aceleración</h1>
+<p class="subtitle lead">Cambio de régimen en la tasa de homicidios de Ecuador, 2007–2023</p>
+  <div class="quarto-categories">
+    <div class="quarto-category">research</div>
+    <div class="quarto-category">seguridad</div>
+    <div class="quarto-category">econometría aplicada</div>
+  </div>
+  </div>
+
+<div>
+  <div class="description">
+    Investigación descriptiva con selección de quiebre, robustez y trazabilidad completa.
+  </div>
+</div>
+
+
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Autor/a</div>
+    <div class="quarto-title-meta-contents">
+             <p>Alan Del Rosario </p>
+          </div>
+  </div>
+    
+    <div>
+    <div class="quarto-title-meta-heading">Fecha de publicación</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">5 de julio de 2026</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<div class="research-context-bar">
+<p><a href="../projects/homicidios-research.html">Investigación</a> <a href="../projects/homicidios-dashboard.html">Tablero</a> <a href="../projects/homicidios.html">Caso</a> <a href="../output/pdf/research-homicidios-ecuador.pdf">Informe PDF</a></p>
+</div>
+<div class="research-document">
+<section id="resumen" class="level2" data-number="1">
+<h2 data-number="1" class="anchored" data-anchor-id="resumen"><span class="header-section-number">1</span> Resumen</h2>
+<p>Este estudio examina si una tendencia lineal única describe adecuadamente la tasa anual de homicidios intencionales de Ecuador entre 2007 y 2023. Se compara una tendencia global con modelos lineales segmentados para nueve fechas candidatas de quiebre, manteniendo un mínimo de cinco observaciones por régimen. La selección se realiza mediante el Criterio de Información Bayesiano (BIC) y se somete a sensibilidad en logaritmos y leave-one-out. El ejercicio identifica un cambio de pendiente en 2019 y una aceleración posterior pronunciada. El resultado es descriptivo: detecta inestabilidad en la trayectoria, pero no identifica sus causas.</p>
+<p><strong>Palabras clave:</strong> homicidios, cambio estructural, tendencia segmentada, seguridad, Ecuador.<br>
+<strong>JEL:</strong> C22, I18, K42.</p>
+</section>
+<section id="hallazgos-principales" class="level2" data-number="2">
+<h2 data-number="2" class="anchored" data-anchor-id="hallazgos-principales"><span class="header-section-number">2</span> Hallazgos principales</h2>
+<section id="la-trayectoria-cambia-de-régimen" class="level3 research-finding" data-number="2.1">
+<h3 data-number="2.1" class="anchored" data-anchor-id="la-trayectoria-cambia-de-régimen"><span class="header-section-number">2.1</span> 1 · La trayectoria cambia de régimen</h3>
+<p>El quiebre que minimiza el BIC se ubica en <strong>2019</strong>. Antes del quiebre, la pendiente estimada es de <strong>-1,42 puntos por año</strong>; después, de <strong>+9,31 puntos por año</strong>.</p>
+</section>
+<section id="el-último-salto-es-material" class="level3 research-finding" data-number="2.2">
+<h3 data-number="2.2" class="anchored" data-anchor-id="el-último-salto-es-material"><span class="header-section-number">2.2</span> 2 · El último salto es material</h3>
+<p>La tasa de 2023 fue <strong>45,72 por 100.000 habitantes</strong>, <strong>66,8%</strong> por encima de 2022. Entre 2020 y 2023, el crecimiento anual compuesto fue <strong>80,2%</strong>.</p>
+</section>
+<section id="el-patrón-sobrevive-a-pruebas-de-sensibilidad" class="level3 research-finding" data-number="2.3">
+<h3 data-number="2.3" class="anchored" data-anchor-id="el-patrón-sobrevive-a-pruebas-de-sensibilidad"><span class="header-section-number">2.3</span> 3 · El patrón sobrevive a pruebas de sensibilidad</h3>
+<p>La especificación en logaritmos también selecciona <strong>2019</strong>. Al retirar una observación por vez, el mismo quiebre es elegido en <strong>100,0%</strong> de las iteraciones.</p>
+</section>
+</section>
+<section id="pregunta-y-marco-analítico" class="level2" data-number="3">
+<h2 data-number="3" class="anchored" data-anchor-id="pregunta-y-marco-analítico"><span class="header-section-number">3</span> Pregunta y marco analítico</h2>
+<p>La pregunta es deliberadamente acotada: <strong>¿una sola tendencia temporal resume la trayectoria observada o los datos favorecen dos regímenes con pendientes distintas?</strong> No se estima el efecto de una política ni se adjudica el cambio a mercados ilícitos, instituciones o condiciones sociales. Esas explicaciones requieren covariables, teoría causal y un diseño de identificación distinto.</p>
+<p>El concepto de homicidio intencional corresponde a una muerte ilícita infligida con intención de causar muerte o lesión grave; el indicador anual es agregado por UNODC y expresado por 100.000 habitantes <span class="citation" data-cites="worldbank_metadata">(<a href="#ref-worldbank_metadata" role="doc-biblioref">World Bank 2026</a>)</span>.</p>
+</section>
+<section id="datos" class="level2" data-number="4">
+<h2 data-number="4" class="anchored" data-anchor-id="datos"><span class="header-section-number">4</span> Datos</h2>
+<p>La fuente es World Development Indicators del Banco Mundial, indicador <code>VC.IHR.PSRC.P5</code>, construido a partir de UNODC. Se utiliza 2007–2023 porque constituye el tramo continuo disponible: 17 observaciones anuales, sin imputación. Los años 2003–2006 quedan fuera del modelo por ausencia de dato. La descarga se ejecutó el 5 de julio de 2026 y la API reportó actualización al 1 de julio de 2026.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../posts/2026-07-homicidios-wb/outputs/figura_regimen.svg" class="img-fluid figure-img" alt="Serie 2007 a 2023 y tendencia segmentada. El modelo selecciona 2019 como quiebre de pendiente."></p>
+<figcaption>Trayectoria observada y ajuste segmentado.</figcaption>
+</figure>
+</div>
+</section>
+<section id="método" class="level2" data-number="5">
+<h2 data-number="5" class="anchored" data-anchor-id="método"><span class="header-section-number">5</span> Método</h2>
+<p>Para cada año candidato <span class="math inline">\(\tau\)</span> se estima:</p>
+<p><span class="math display">\[
+y_t = \alpha + \beta_1 t + \beta_2 (t-\tau)_+ + \varepsilon_t,
+\]</span></p>
+<p>donde <span class="math inline">\((t-\tau)_+=\max(0,t-\tau)\)</span>. La pendiente anterior al quiebre es <span class="math inline">\(\beta_1\)</span> y la posterior es <span class="math inline">\(\beta_1+\beta_2\)</span>. Se consideran nueve fechas entre 2011 y 2019; la restricción deja al menos cinco observaciones por régimen. La fecha seleccionada minimiza el BIC, una aplicación exploratoria del principio de elegir quiebres como minimizadores globales del error penalizado por complejidad <span class="citation" data-cites="bai_perron_2003">(<a href="#ref-bai_perron_2003" role="doc-biblioref">Bai y Perron 2003</a>)</span>.</p>
+<p>Por el tamaño reducido de la muestra, el ejercicio no se presenta como una prueba asintótica definitiva. Los intervalos usan covarianza HC1 y distribución t; la robustez se evalúa reestimando en logaritmos y retirando una observación por vez.</p>
+</section>
+<section id="resultados" class="level2" data-number="6">
+<h2 data-number="6" class="anchored" data-anchor-id="resultados"><span class="header-section-number">6</span> Resultados</h2>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Indicador</th>
+<th style="text-align: right;">Tendencia única</th>
+<th style="text-align: right;">Modelo segmentado</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>BIC</td>
+<td style="text-align: right;">130,67</td>
+<td style="text-align: right;"><strong>94,67</strong></td>
+</tr>
+<tr class="even">
+<td>Ventaja BIC del segmentado</td>
+<td style="text-align: right;">—</td>
+<td style="text-align: right;"><strong>36,00</strong></td>
+</tr>
+<tr class="odd">
+<td>R² ajustado</td>
+<td style="text-align: right;">—</td>
+<td style="text-align: right;"><strong>0,889</strong></td>
+</tr>
+<tr class="even">
+<td>Pendiente antes de 2019</td>
+<td style="text-align: right;">—</td>
+<td style="text-align: right;">-1,42</td>
+</tr>
+<tr class="odd">
+<td>Pendiente después de 2019</td>
+<td style="text-align: right;">—</td>
+<td style="text-align: right;">+9,31</td>
+</tr>
+</tbody>
+</table>
+<p>El quiebre seleccionado es <strong>2019</strong>. La pendiente estimada antes de esa fecha es <strong>-1,42 puntos por año</strong>; después es <strong>+9,31</strong>. La tasa observada alcanza <strong>45,72</strong> en 2023, <strong>66,8%</strong> por encima de 2022. Entre 2020 y 2023, el crecimiento anual compuesto es <strong>80,2%</strong>.</p>
+<p>La diferencia estadística es grande, pero el intervalo posterior refleja que solo hay cinco observaciones en el régimen reciente.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../posts/2026-07-homicidios-wb/outputs/figura_variaciones.svg" class="img-fluid figure-img" alt="Barras de cambios anuales en la tasa. Los mayores aumentos aparecen entre 2021 y 2023."></p>
+<figcaption>Cambios anuales absolutos.</figcaption>
+</figure>
+</div>
+</section>
+<section id="robustez" class="level2" data-number="7">
+<h2 data-number="7" class="anchored" data-anchor-id="robustez"><span class="header-section-number">7</span> Robustez</h2>
+<p>La especificación logarítmica vuelve a seleccionar 2019. En la validación leave-one-out, que reestima todos los candidatos tras retirar cada año, 2019 conserva la mayor frecuencia de selección. El gráfico siguiente muestra que también es el mínimo de BIC en niveles; 2018 y 2017 son alternativas progresivamente menos favorecidas.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../posts/2026-07-homicidios-wb/outputs/figura_robustez.svg" class="img-fluid figure-img" alt="BIC de modelos con quiebres candidatos de 2011 a 2019. El menor valor corresponde a 2019."></p>
+<figcaption>Comparación BIC por fecha candidata.</figcaption>
+</figure>
+</div>
+</section>
+<section id="discusión" class="level2" data-number="8">
+<h2 data-number="8" class="anchored" data-anchor-id="discusión"><span class="header-section-number">8</span> Discusión</h2>
+<p>El resultado central no es que “2019 causó” el aumento, sino que una representación con dos pendientes describe mucho mejor el patrón observado que una tendencia única. Para la gestión, esto implica que promedios de largo plazo pueden ocultar la velocidad del régimen reciente. Para investigación, delimita el siguiente paso: integrar registros subnacionales y variables sobre modalidad, territorio y perfil de víctimas para contrastar mecanismos específicos.</p>
+</section>
+<section id="limitaciones" class="level2" data-number="9">
+<h2 data-number="9" class="anchored" data-anchor-id="limitaciones"><span class="header-section-number">9</span> Limitaciones</h2>
+<ol type="1">
+<li>Diecisiete observaciones son una base pequeña para inferencia de series temporales.</li>
+<li>La tasa nacional oculta heterogeneidad territorial y por tipo de homicidio.</li>
+<li>La fecha de quiebre se selecciona dentro de una grilla; no representa una fecha causal.</li>
+<li>El último dato es 2023, por lo que el tablero no describe 2024–2026.</li>
+<li>Las revisiones de UNODC o de la fuente nacional pueden modificar la serie.</li>
+</ol>
+</section>
+<section id="reproducibilidad" class="level2" data-number="10">
+<h2 data-number="10" class="anchored" data-anchor-id="reproducibilidad"><span class="header-section-number">10</span> Reproducibilidad</h2>
+<p>Los datos, el código y las figuras de este documento son reproducibles a partir de la fuente pública citada. La investigación y el tablero ejecutivo se derivan siempre de los mismos resultados, por lo que ambos son consistentes entre sí.</p>
+</section>
+<section id="referencias" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="referencias">Referencias</h2>
+</section>
+</div>
+
+
+
+
+<a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Volver arriba</a><div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">Referencias</h2><div id="refs" class="references csl-bib-body hanging-indent" role="list">
+<div id="ref-bai_perron_2003" class="csl-entry" role="listitem">
+Bai, Jushan, y Pierre Perron. 2003. <span>«Computation and Analysis of Multiple Structural Change Models»</span>. <em>Journal of Applied Econometrics</em> 18 (1): 1-22. <a href="https://doi.org/10.1002/jae.659">https://doi.org/10.1002/jae.659</a>.
+</div>
+<div id="ref-worldbank_metadata" class="csl-entry" role="listitem">
+World Bank. 2026. <em>Metadata Glossary: Intentional homicides (per 100,000 people)</em>. <a href="https://databank.worldbank.org/metadataglossary/world-development-indicators/series/VC.IHR.PSRC.P5">https://databank.worldbank.org/metadataglossary/world-development-indicators/series/VC.IHR.PSRC.P5</a>.
+</div>
+</div></section></div></main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copiado");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copiado");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp("https:\/\/delrosario20\.github\.io\/home-alan\/");
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+            // target, if specified
+            link.setAttribute("target", "_blank");
+            if (link.getAttribute("rel") === null) {
+              link.setAttribute("rel", "noopener");
+            }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+<p><strong>Alan Del Rosario</strong> · Economía aplicada y analítica</p>
+</div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    </div>
+    <div class="nav-footer-right">
+<p>Sitio estático · Hecho con <a href="https://quarto.org">Quarto</a></p>
+</div>
+  </div>
+</footer>
+
+
+
+
+<script src="../site_libs/quarto-html/zenscroll-min.js"></script>
+</body></html>

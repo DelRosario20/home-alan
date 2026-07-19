@@ -1,0 +1,184 @@
+[
+  {
+    "objectID": "research/index.html",
+    "href": "research/index.html",
+    "title": "Investigación para comprender",
+    "section": "",
+    "text": "INVESTIGACIÓN\n\n\nInvestigación para comprender\nPapers y estudios reproducibles con espacio para teoría, metodología, resultados, robustez y límites. Esta ruta prioriza la lectura sostenida y la trazabilidad académica.\n\n\n\nQué vas a encontrar Pregunta, datos, método, resultados, robustez y límites, con trazabilidad completa.\n\n\n\n\nCómo leer esta sección: cada investigación enlaza, cuando existe, su versión ejecutiva en Tableros. Uno complementa al otro; ninguno reemplaza al otro.\n\n\n\n\n\n\n\n\n\n\n\nDe descenso sostenido a aceleración\n\n\n\nresearch\n\nseguridad\n\neconometría aplicada\n\n\n\nInvestigación descriptiva con selección de quiebre, robustez y trazabilidad completa.\n\n\n\n5 jul 2026\n\n\n\n\n\n\nNo hay resultados\n\n\n\n\n\n\n Volver arriba"
+  },
+  {
+    "objectID": "projects/homicidios.html",
+    "href": "projects/homicidios.html",
+    "title": "Cambio de régimen en los homicidios de Ecuador",
+    "section": "",
+    "text": "CASO DE ANÁLISIS · SEGURIDAD Y VIOLENCIA\n\n\n\nUn análisis de la tasa de homicidios intencionales en Ecuador entre 2007 y 2023, disponible como investigación técnica y como tablero ejecutivo.\n\nLeer investigación Abrir tablero Informe PDF"
+  },
+  {
+    "objectID": "projects/homicidios.html#un-hallazgo-dos-lenguajes",
+    "href": "projects/homicidios.html#un-hallazgo-dos-lenguajes",
+    "title": "Cambio de régimen en los homicidios de Ecuador",
+    "section": "Un hallazgo, dos lenguajes",
+    "text": "Un hallazgo, dos lenguajes\n\n\nInvestigación\nPregunta delimitada, definición del indicador, modelo segmentado, selección por BIC, intervalos robustos, sensibilidad, discusión y limitaciones.\nExplorar análisis →\n\n\nTablero ejecutivo\nKPIs de situación, velocidad de cambio, semáforo de calidad, lectura ejecutiva y siguiente activo de datos requerido.\nAbrir tablero →"
+  },
+  {
+    "objectID": "projects/homicidios.html#resultado-central",
+    "href": "projects/homicidios.html#resultado-central",
+    "title": "Cambio de régimen en los homicidios de Ecuador",
+    "section": "Resultado central",
+    "text": "Resultado central\n\n\n\nLa tendencia segmentada selecciona 2019 como cambio de pendiente.\n\n\n\n\n45,72\nTasa observada en 2023\n\n\n+66,8%\nVariación frente a 2022\n\n\n2019\nQuiebre con mejor BIC\n\n\n17 años\nSerie continua modelada"
+  },
+  {
+    "objectID": "projects/homicidios.html#fuente-de-los-datos",
+    "href": "projects/homicidios.html#fuente-de-los-datos",
+    "title": "Cambio de régimen en los homicidios de Ecuador",
+    "section": "Fuente de los datos",
+    "text": "Fuente de los datos\nBanco Mundial / UNODC, indicador de homicidios intencionales por 100.000 habitantes. La investigación, el tablero y el informe PDF citan siempre los mismos datos y resultados verificados: no hay cifras copiadas entre productos."
+  },
+  {
+    "objectID": "bi/index.html",
+    "href": "bi/index.html",
+    "title": "Tableros para decidir",
+    "section": "",
+    "text": "TABLEROS\n\n\nTableros para decidir\nVistas ejecutivas derivadas de investigaciones verificadas. Aquí el foco cambia: indicadores primero, contexto visible, comparación rápida y límites operativos explícitos.\n\n\n\nQué vas a encontrar Indicadores clave, tendencia, desglose y fuente de los datos, siempre visibles.\n\n\n\n\nCómo leer esta sección: cada tablero se orienta en segundos y mantiene acceso directo a la investigación que lo sustenta.\n\n\n\n\n\n\n\n\n\n\n\nHomicidios en Ecuador\n\n\n\nbusiness intelligence\n\ndashboard\n\nseguridad\n\n\n\nTablero ejecutivo con indicadores, trayectoria, diagnóstico y gobierno de la señal.\n\n\n\n5 jul 2026\n\n\n\n\n\n\nNo hay resultados\n\n\n\n\n\n\n Volver arriba"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "Perfil",
+    "section": "",
+    "text": "Economista en formación\nUniversidad Estatal de Milagro (UNEMI)\nGitHub · LinkedIn · Correo\n\n\n\n\n\nTrabajo con datos: econometría aplicada, microdatos y visualización. Transformo información compleja en evidencia útil para la toma de decisiones, con experiencia en los sectores público, privado y salud. He presentado investigaciones en congresos académicos sobre participación laboral, política de combustibles y remesas, y trabajo principalmente con fuentes oficiales de Ecuador.\n\n\n\nEconometría aplicada y microdatos\nEconomía laboral y sociodemografía\nSeguridad, bienestar y política pública\nVisualización de datos y Business Intelligence\n\n\n\n\n\nI work with applied econometrics, microdata, and data visualization. I turn complex information into useful evidence for decision-making, working primarily with official data sources from Ecuador."
+  },
+  {
+    "objectID": "about.html#sobre-mí",
+    "href": "about.html#sobre-mí",
+    "title": "Perfil",
+    "section": "",
+    "text": "Trabajo con datos: econometría aplicada, microdatos y visualización. Transformo información compleja en evidencia útil para la toma de decisiones, con experiencia en los sectores público, privado y salud. He presentado investigaciones en congresos académicos sobre participación laboral, política de combustibles y remesas, y trabajo principalmente con fuentes oficiales de Ecuador.\n\n\n\nEconometría aplicada y microdatos\nEconomía laboral y sociodemografía\nSeguridad, bienestar y política pública\nVisualización de datos y Business Intelligence"
+  },
+  {
+    "objectID": "about.html#about-me",
+    "href": "about.html#about-me",
+    "title": "Perfil",
+    "section": "",
+    "text": "I work with applied econometrics, microdata, and data visualization. I turn complex information into useful evidence for decision-making, working primarily with official data sources from Ecuador."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "\nAlan Del Rosario\n",
+    "section": "",
+    "text": "Alan Del Rosario"
+  },
+  {
+    "objectID": "index.html#investigo-problemas-económicos-y-sociales-de-ecuador-desde-la-evidencia-disponible.",
+    "href": "index.html#investigo-problemas-económicos-y-sociales-de-ecuador-desde-la-evidencia-disponible.",
+    "title": "\nAlan Del Rosario\n",
+    "section": "Investigo problemas económicos y sociales de Ecuador desde la evidencia disponible.",
+    "text": "Investigo problemas económicos y sociales de Ecuador desde la evidencia disponible.\nMe interesa convertir preguntas públicas en análisis verificables: entender de dónde sale el dato, qué permite afirmar, qué límites tiene y cómo puede comunicarse sin perder rigor. Mi trabajo se mueve entre investigación económica, análisis de datos, visualización ejecutiva y documentación reproducible.\n\nVer casos Conocer mi perfil"
+  },
+  {
+    "objectID": "index.html#un-caso-evidencia-verificada",
+    "href": "index.html#un-caso-evidencia-verificada",
+    "title": "\nAlan Del Rosario\n",
+    "section": "Un caso, evidencia verificada",
+    "text": "Un caso, evidencia verificada\nCada caso combina una investigación técnica y un tablero ejecutivo derivados de la misma evidencia. Explóralos a continuación."
+  },
+  {
+    "objectID": "posts/index.html",
+    "href": "posts/index.html",
+    "title": "Blog",
+    "section": "",
+    "text": "No hay resultados\n Volver arriba"
+  },
+  {
+    "objectID": "projects/homicidios-research.html",
+    "href": "projects/homicidios-research.html",
+    "title": "De descenso sostenido a aceleración",
+    "section": "",
+    "text": "Investigación Tablero Caso Informe PDF"
+  },
+  {
+    "objectID": "projects/homicidios-research.html#resumen",
+    "href": "projects/homicidios-research.html#resumen",
+    "title": "De descenso sostenido a aceleración",
+    "section": "1 Resumen",
+    "text": "1 Resumen\nEste estudio examina si una tendencia lineal única describe adecuadamente la tasa anual de homicidios intencionales de Ecuador entre 2007 y 2023. Se compara una tendencia global con modelos lineales segmentados para nueve fechas candidatas de quiebre, manteniendo un mínimo de cinco observaciones por régimen. La selección se realiza mediante el Criterio de Información Bayesiano (BIC) y se somete a sensibilidad en logaritmos y leave-one-out. El ejercicio identifica un cambio de pendiente en 2019 y una aceleración posterior pronunciada. El resultado es descriptivo: detecta inestabilidad en la trayectoria, pero no identifica sus causas.\nPalabras clave: homicidios, cambio estructural, tendencia segmentada, seguridad, Ecuador.\nJEL: C22, I18, K42."
+  },
+  {
+    "objectID": "projects/homicidios-research.html#hallazgos-principales",
+    "href": "projects/homicidios-research.html#hallazgos-principales",
+    "title": "De descenso sostenido a aceleración",
+    "section": "2 Hallazgos principales",
+    "text": "2 Hallazgos principales\n\n2.1 1 · La trayectoria cambia de régimen\nEl quiebre que minimiza el BIC se ubica en 2019. Antes del quiebre, la pendiente estimada es de -1,42 puntos por año; después, de +9,31 puntos por año.\n\n\n2.2 2 · El último salto es material\nLa tasa de 2023 fue 45,72 por 100.000 habitantes, 66,8% por encima de 2022. Entre 2020 y 2023, el crecimiento anual compuesto fue 80,2%.\n\n\n2.3 3 · El patrón sobrevive a pruebas de sensibilidad\nLa especificación en logaritmos también selecciona 2019. Al retirar una observación por vez, el mismo quiebre es elegido en 100,0% de las iteraciones."
+  },
+  {
+    "objectID": "projects/homicidios-research.html#pregunta-y-marco-analítico",
+    "href": "projects/homicidios-research.html#pregunta-y-marco-analítico",
+    "title": "De descenso sostenido a aceleración",
+    "section": "3 Pregunta y marco analítico",
+    "text": "3 Pregunta y marco analítico\nLa pregunta es deliberadamente acotada: ¿una sola tendencia temporal resume la trayectoria observada o los datos favorecen dos regímenes con pendientes distintas? No se estima el efecto de una política ni se adjudica el cambio a mercados ilícitos, instituciones o condiciones sociales. Esas explicaciones requieren covariables, teoría causal y un diseño de identificación distinto.\nEl concepto de homicidio intencional corresponde a una muerte ilícita infligida con intención de causar muerte o lesión grave; el indicador anual es agregado por UNODC y expresado por 100.000 habitantes (World Bank 2026)."
+  },
+  {
+    "objectID": "projects/homicidios-research.html#datos",
+    "href": "projects/homicidios-research.html#datos",
+    "title": "De descenso sostenido a aceleración",
+    "section": "4 Datos",
+    "text": "4 Datos\nLa fuente es World Development Indicators del Banco Mundial, indicador VC.IHR.PSRC.P5, construido a partir de UNODC. Se utiliza 2007–2023 porque constituye el tramo continuo disponible: 17 observaciones anuales, sin imputación. Los años 2003–2006 quedan fuera del modelo por ausencia de dato. La descarga se ejecutó el 5 de julio de 2026 y la API reportó actualización al 1 de julio de 2026.\n\n\n\nTrayectoria observada y ajuste segmentado."
+  },
+  {
+    "objectID": "projects/homicidios-research.html#método",
+    "href": "projects/homicidios-research.html#método",
+    "title": "De descenso sostenido a aceleración",
+    "section": "5 Método",
+    "text": "5 Método\nPara cada año candidato \\(\\tau\\) se estima:\n\\[\ny_t = \\alpha + \\beta_1 t + \\beta_2 (t-\\tau)_+ + \\varepsilon_t,\n\\]\ndonde \\((t-\\tau)_+=\\max(0,t-\\tau)\\). La pendiente anterior al quiebre es \\(\\beta_1\\) y la posterior es \\(\\beta_1+\\beta_2\\). Se consideran nueve fechas entre 2011 y 2019; la restricción deja al menos cinco observaciones por régimen. La fecha seleccionada minimiza el BIC, una aplicación exploratoria del principio de elegir quiebres como minimizadores globales del error penalizado por complejidad (Bai y Perron 2003).\nPor el tamaño reducido de la muestra, el ejercicio no se presenta como una prueba asintótica definitiva. Los intervalos usan covarianza HC1 y distribución t; la robustez se evalúa reestimando en logaritmos y retirando una observación por vez."
+  },
+  {
+    "objectID": "projects/homicidios-research.html#resultados",
+    "href": "projects/homicidios-research.html#resultados",
+    "title": "De descenso sostenido a aceleración",
+    "section": "6 Resultados",
+    "text": "6 Resultados\n\n\n\nIndicador\nTendencia única\nModelo segmentado\n\n\n\n\nBIC\n130,67\n94,67\n\n\nVentaja BIC del segmentado\n—\n36,00\n\n\nR² ajustado\n—\n0,889\n\n\nPendiente antes de 2019\n—\n-1,42\n\n\nPendiente después de 2019\n—\n+9,31\n\n\n\nEl quiebre seleccionado es 2019. La pendiente estimada antes de esa fecha es -1,42 puntos por año; después es +9,31. La tasa observada alcanza 45,72 en 2023, 66,8% por encima de 2022. Entre 2020 y 2023, el crecimiento anual compuesto es 80,2%.\nLa diferencia estadística es grande, pero el intervalo posterior refleja que solo hay cinco observaciones en el régimen reciente.\n\n\n\nCambios anuales absolutos."
+  },
+  {
+    "objectID": "projects/homicidios-research.html#robustez",
+    "href": "projects/homicidios-research.html#robustez",
+    "title": "De descenso sostenido a aceleración",
+    "section": "7 Robustez",
+    "text": "7 Robustez\nLa especificación logarítmica vuelve a seleccionar 2019. En la validación leave-one-out, que reestima todos los candidatos tras retirar cada año, 2019 conserva la mayor frecuencia de selección. El gráfico siguiente muestra que también es el mínimo de BIC en niveles; 2018 y 2017 son alternativas progresivamente menos favorecidas.\n\n\n\nComparación BIC por fecha candidata."
+  },
+  {
+    "objectID": "projects/homicidios-research.html#discusión",
+    "href": "projects/homicidios-research.html#discusión",
+    "title": "De descenso sostenido a aceleración",
+    "section": "8 Discusión",
+    "text": "8 Discusión\nEl resultado central no es que “2019 causó” el aumento, sino que una representación con dos pendientes describe mucho mejor el patrón observado que una tendencia única. Para la gestión, esto implica que promedios de largo plazo pueden ocultar la velocidad del régimen reciente. Para investigación, delimita el siguiente paso: integrar registros subnacionales y variables sobre modalidad, territorio y perfil de víctimas para contrastar mecanismos específicos."
+  },
+  {
+    "objectID": "projects/homicidios-research.html#limitaciones",
+    "href": "projects/homicidios-research.html#limitaciones",
+    "title": "De descenso sostenido a aceleración",
+    "section": "9 Limitaciones",
+    "text": "9 Limitaciones\n\nDiecisiete observaciones son una base pequeña para inferencia de series temporales.\nLa tasa nacional oculta heterogeneidad territorial y por tipo de homicidio.\nLa fecha de quiebre se selecciona dentro de una grilla; no representa una fecha causal.\nEl último dato es 2023, por lo que el tablero no describe 2024–2026.\nLas revisiones de UNODC o de la fuente nacional pueden modificar la serie."
+  },
+  {
+    "objectID": "projects/homicidios-research.html#reproducibilidad",
+    "href": "projects/homicidios-research.html#reproducibilidad",
+    "title": "De descenso sostenido a aceleración",
+    "section": "10 Reproducibilidad",
+    "text": "10 Reproducibilidad\nLos datos, el código y las figuras de este documento son reproducibles a partir de la fuente pública citada. La investigación y el tablero ejecutivo se derivan siempre de los mismos resultados, por lo que ambos son consistentes entre sí."
+  },
+  {
+    "objectID": "projects/homicidios-research.html#referencias",
+    "href": "projects/homicidios-research.html#referencias",
+    "title": "De descenso sostenido a aceleración",
+    "section": "Referencias",
+    "text": "Referencias"
+  },
+  {
+    "objectID": "projects/index.html",
+    "href": "projects/index.html",
+    "title": "Biblioteca de casos",
+    "section": "",
+    "text": "PORTAFOLIO DE CASOS\n\n\nBiblioteca de casos\nPreguntas aplicadas sobre Ecuador, cada una con su investigación técnica y su tablero ejecutivo listos para explorar.\n\n\n\nEvidencia consistente El informe y el tablero de cada caso citan siempre los mismos resultados verificados.\n\n\n\n\n\n\n\n\n\n\n\n\n\nCambio de régimen en los homicidios de Ecuador\n\n\n\nresearch\n\nbusiness intelligence\n\nseguridad\n\n\n\nInvestigación y tablero sobre el cambio de régimen en la tasa de homicidios de Ecuador, 2007–2023.\n\n\n\n5 jul 2026\n\n\n\n\n\n\nNo hay resultados\n\n\n\n\n\n\n Volver arriba"
+  }
+]

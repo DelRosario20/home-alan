@@ -1,0 +1,24 @@
+[
+  {
+    "listing": "/research/index.html",
+    "items": [
+      "/projects/homicidios-research.html"
+    ]
+  },
+  {
+    "listing": "/bi/index.html",
+    "items": [
+      "/projects/homicidios-dashboard.html"
+    ]
+  },
+  {
+    "listing": "/posts/index.html",
+    "items": []
+  },
+  {
+    "listing": "/projects/index.html",
+    "items": [
+      "/projects/homicidios.html"
+    ]
+  }
+]
