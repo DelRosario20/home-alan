@@ -60,18 +60,29 @@ serieFiltrada = serieDashboard.filter(d => d.anio >= desde)
 ### Evolución filtrable {width=64%}
 
 ```{ojs}
+//| output: false
+// Colores de marca leídos de los tokens --adr-* de dashboard.css, con
+// fallback al hex canónico por robustez. Nunca hex ajenos a la paleta.
+token = (name, fallback) =>
+  getComputedStyle(document.documentElement).getPropertyValue(name).trim() || fallback
+colorSerie = token("--adr-cyan-600", "#007f9e")
+colorEjes = token("--adr-ink", "#17263a")
+colorBase = token("--adr-line", "#d7e0ea")
+```
+
+```{ojs}
 Plot.plot({
   width,
   height: 360,
   marginLeft: 58,
   marginBottom: 42,
-  style: {background: "transparent", color: "#15263A", fontFamily: "Manrope, sans-serif"},
+  style: {background: "transparent", color: colorEjes, fontFamily: "Manrope, sans-serif"},
   x: {label: null, tickFormat: d => `${d}`},
   y: {grid: true, label: "Tasa por 100.000 habitantes"},
   marks: [
-    Plot.ruleY([0], {stroke: "#CED9E5"}),
-    Plot.line(serieFiltrada, {x: "anio", y: "tasa_homicidios", stroke: "#0F766E", strokeWidth: 3, tip: true}),
-    Plot.dot(serieFiltrada, {x: "anio", y: "tasa_homicidios", fill: "#0F766E", r: 3, tip: true})
+    Plot.ruleY([0], {stroke: colorBase}),
+    Plot.line(serieFiltrada, {x: "anio", y: "tasa_homicidios", stroke: colorSerie, strokeWidth: 3, tip: true}),
+    Plot.dot(serieFiltrada, {x: "anio", y: "tasa_homicidios", fill: colorSerie, r: 3, tip: true})
   ]
 })
 ```
@@ -96,7 +107,7 @@ El último dato comparable es 2023. Ninguna decisión sobre 2024–2026 debe pre
 
 ### Variación anual {width=58%}
 
-![Cambios frente al año anterior](../posts/2026-07-homicidios-wb/outputs/figura_variaciones.svg){fig-alt="Variaciones anuales de la tasa de homicidios en Ecuador; los mayores aumentos se concentran entre 2021 y 2023."}
+![Cambios frente al año anterior](../posts/2026-07-homicidios-wb/outputs/figura_variaciones.svg){fig-alt="Variaciones anuales de la tasa de homicidios en Ecuador; los mayores aumentos se concentran entre 2021 y 2023." loading="lazy"}
 
 ### Calidad de la señal {width=42%}
 
@@ -116,7 +127,7 @@ El último dato comparable es 2023. Ninguna decisión sobre 2024–2026 debe pre
 
 ### Selección del quiebre {width=55%}
 
-![BIC por año candidato](../posts/2026-07-homicidios-wb/outputs/figura_robustez.svg){fig-alt="Comparación del BIC para fechas candidatas de quiebre; 2019 presenta el valor mínimo."}
+![BIC por año candidato](../posts/2026-07-homicidios-wb/outputs/figura_robustez.svg){fig-alt="Comparación del BIC para fechas candidatas de quiebre; 2019 presenta el valor mínimo." loading="lazy"}
 
 ### Semáforo ejecutivo {width=45%}
 
