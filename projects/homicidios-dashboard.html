@@ -327,24 +327,59 @@ grid-auto-rows: minmax(0, 1fr);">
 <div class="bslib-grid html-fill-item html-fill-container" style="display: grid; grid-template-columns: minmax(3em, 64fr) minmax(3em, 36fr);
 grid-auto-rows: minmax(0, 1fr);">
 <div class="bslib-grid html-fill-item html-fill-container" style="display: grid; grid-template-rows: minmax(3em, 1fr); grid-auto-columns: minmax(0, 1fr);">
+<div class="cell hidden html-fill-item html-fill-container">
+<div class="code-copy-outer-scaffold html-fill-item html-fill-container"><div class="sourceCode cell-code hidden html-fill-item html-fill-container" id="cb4" data-startfrom="66" data-source-offset="-145"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 65;"><span id="cb4-66"><a href="#cb4-66" aria-hidden="true" tabindex="-1"></a>token <span class="op">=</span> (name<span class="op">,</span> fallback) <span class="kw">=&gt;</span></span>
+<span id="cb4-67"><a href="#cb4-67" aria-hidden="true" tabindex="-1"></a>  <span class="fu">getComputedStyle</span>(<span class="bu">document</span><span class="op">.</span><span class="at">documentElement</span>)<span class="op">.</span><span class="fu">getPropertyValue</span>(name)<span class="op">.</span><span class="fu">trim</span>() <span class="op">||</span> fallback</span>
+<span id="cb4-68"><a href="#cb4-68" aria-hidden="true" tabindex="-1"></a>colorSerie <span class="op">=</span> <span class="fu">token</span>(<span class="st">"--adr-cyan-600"</span><span class="op">,</span> <span class="st">"#007f9e"</span>)</span>
+<span id="cb4-69"><a href="#cb4-69" aria-hidden="true" tabindex="-1"></a>colorEjes <span class="op">=</span> <span class="fu">token</span>(<span class="st">"--adr-ink"</span><span class="op">,</span> <span class="st">"#17263a"</span>)</span>
+<span id="cb4-70"><a href="#cb4-70" aria-hidden="true" tabindex="-1"></a>colorBase <span class="op">=</span> <span class="fu">token</span>(<span class="st">"--adr-line"</span><span class="op">,</span> <span class="st">"#d7e0ea"</span>)</span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-display hidden html-fill-item html-fill-container">
+<div class="html-fill-item html-fill-container">
+<div id="ojs-cell-4-1" data-nodetype="declaration" class="html-fill-item html-fill-container">
+
+</div>
+</div>
+</div>
+<div class="cell-output cell-output-display hidden html-fill-item html-fill-container">
+<div class="html-fill-item html-fill-container">
+<div id="ojs-cell-4-2" data-nodetype="declaration" class="html-fill-item html-fill-container">
+
+</div>
+</div>
+</div>
+<div class="cell-output cell-output-display hidden html-fill-item html-fill-container">
+<div class="html-fill-item html-fill-container">
+<div id="ojs-cell-4-3" data-nodetype="declaration" class="html-fill-item html-fill-container">
+
+</div>
+</div>
+</div>
+<div class="cell-output cell-output-display hidden html-fill-item html-fill-container">
+<div class="html-fill-item html-fill-container">
+<div id="ojs-cell-4-4" data-nodetype="declaration" class="html-fill-item html-fill-container">
+
+</div>
+</div>
+</div>
+</div>
 <div class="card cell bslib-card html-fill-container html-fill-item" data-bslib-card-init="" data-require-bs-caller="card()" data-full-screen="false">
 <div class="card-body html-fill-item html-fill-container">
-<div class="code-copy-outer-scaffold html-fill-item html-fill-container"><div class="sourceCode cell-code hidden html-fill-item html-fill-container" id="cb4" data-startfrom="62" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 61;"><span id="cb4-62"><a href="#cb4-62" aria-hidden="true" tabindex="-1"></a>Plot<span class="op">.</span><span class="fu">plot</span>({</span>
-<span id="cb4-63"><a href="#cb4-63" aria-hidden="true" tabindex="-1"></a>  width<span class="op">,</span></span>
-<span id="cb4-64"><a href="#cb4-64" aria-hidden="true" tabindex="-1"></a>  <span class="dt">height</span><span class="op">:</span> <span class="dv">360</span><span class="op">,</span></span>
-<span id="cb4-65"><a href="#cb4-65" aria-hidden="true" tabindex="-1"></a>  <span class="dt">marginLeft</span><span class="op">:</span> <span class="dv">58</span><span class="op">,</span></span>
-<span id="cb4-66"><a href="#cb4-66" aria-hidden="true" tabindex="-1"></a>  <span class="dt">marginBottom</span><span class="op">:</span> <span class="dv">42</span><span class="op">,</span></span>
-<span id="cb4-67"><a href="#cb4-67" aria-hidden="true" tabindex="-1"></a>  <span class="dt">style</span><span class="op">:</span> {<span class="dt">background</span><span class="op">:</span> <span class="st">"transparent"</span><span class="op">,</span> <span class="dt">color</span><span class="op">:</span> <span class="st">"#15263A"</span><span class="op">,</span> <span class="dt">fontFamily</span><span class="op">:</span> <span class="st">"Manrope, sans-serif"</span>}<span class="op">,</span></span>
-<span id="cb4-68"><a href="#cb4-68" aria-hidden="true" tabindex="-1"></a>  <span class="dt">x</span><span class="op">:</span> {<span class="dt">label</span><span class="op">:</span> <span class="kw">null</span><span class="op">,</span> <span class="dt">tickFormat</span><span class="op">:</span> d <span class="kw">=&gt;</span> <span class="vs">`</span><span class="sc">${</span>d<span class="sc">}</span><span class="vs">`</span>}<span class="op">,</span></span>
-<span id="cb4-69"><a href="#cb4-69" aria-hidden="true" tabindex="-1"></a>  <span class="dt">y</span><span class="op">:</span> {<span class="dt">grid</span><span class="op">:</span> <span class="kw">true</span><span class="op">,</span> <span class="dt">label</span><span class="op">:</span> <span class="st">"Tasa por 100.000 habitantes"</span>}<span class="op">,</span></span>
-<span id="cb4-70"><a href="#cb4-70" aria-hidden="true" tabindex="-1"></a>  <span class="dt">marks</span><span class="op">:</span> [</span>
-<span id="cb4-71"><a href="#cb4-71" aria-hidden="true" tabindex="-1"></a>    Plot<span class="op">.</span><span class="fu">ruleY</span>([<span class="dv">0</span>]<span class="op">,</span> {<span class="dt">stroke</span><span class="op">:</span> <span class="st">"#CED9E5"</span>})<span class="op">,</span></span>
-<span id="cb4-72"><a href="#cb4-72" aria-hidden="true" tabindex="-1"></a>    Plot<span class="op">.</span><span class="fu">line</span>(serieFiltrada<span class="op">,</span> {<span class="dt">x</span><span class="op">:</span> <span class="st">"anio"</span><span class="op">,</span> <span class="dt">y</span><span class="op">:</span> <span class="st">"tasa_homicidios"</span><span class="op">,</span> <span class="dt">stroke</span><span class="op">:</span> <span class="st">"#0F766E"</span><span class="op">,</span> <span class="dt">strokeWidth</span><span class="op">:</span> <span class="dv">3</span><span class="op">,</span> <span class="dt">tip</span><span class="op">:</span> <span class="kw">true</span>})<span class="op">,</span></span>
-<span id="cb4-73"><a href="#cb4-73" aria-hidden="true" tabindex="-1"></a>    Plot<span class="op">.</span><span class="fu">dot</span>(serieFiltrada<span class="op">,</span> {<span class="dt">x</span><span class="op">:</span> <span class="st">"anio"</span><span class="op">,</span> <span class="dt">y</span><span class="op">:</span> <span class="st">"tasa_homicidios"</span><span class="op">,</span> <span class="dt">fill</span><span class="op">:</span> <span class="st">"#0F766E"</span><span class="op">,</span> <span class="dt">r</span><span class="op">:</span> <span class="dv">3</span><span class="op">,</span> <span class="dt">tip</span><span class="op">:</span> <span class="kw">true</span>})</span>
-<span id="cb4-74"><a href="#cb4-74" aria-hidden="true" tabindex="-1"></a>  ]</span>
-<span id="cb4-75"><a href="#cb4-75" aria-hidden="true" tabindex="-1"></a>})</span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold html-fill-item html-fill-container"><div class="sourceCode cell-code hidden html-fill-item html-fill-container" id="cb5" data-startfrom="73" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 72;"><span id="cb5-73"><a href="#cb5-73" aria-hidden="true" tabindex="-1"></a>Plot<span class="op">.</span><span class="fu">plot</span>({</span>
+<span id="cb5-74"><a href="#cb5-74" aria-hidden="true" tabindex="-1"></a>  width<span class="op">,</span></span>
+<span id="cb5-75"><a href="#cb5-75" aria-hidden="true" tabindex="-1"></a>  <span class="dt">height</span><span class="op">:</span> <span class="dv">360</span><span class="op">,</span></span>
+<span id="cb5-76"><a href="#cb5-76" aria-hidden="true" tabindex="-1"></a>  <span class="dt">marginLeft</span><span class="op">:</span> <span class="dv">58</span><span class="op">,</span></span>
+<span id="cb5-77"><a href="#cb5-77" aria-hidden="true" tabindex="-1"></a>  <span class="dt">marginBottom</span><span class="op">:</span> <span class="dv">42</span><span class="op">,</span></span>
+<span id="cb5-78"><a href="#cb5-78" aria-hidden="true" tabindex="-1"></a>  <span class="dt">style</span><span class="op">:</span> {<span class="dt">background</span><span class="op">:</span> <span class="st">"transparent"</span><span class="op">,</span> <span class="dt">color</span><span class="op">:</span> colorEjes<span class="op">,</span> <span class="dt">fontFamily</span><span class="op">:</span> <span class="st">"Manrope, sans-serif"</span>}<span class="op">,</span></span>
+<span id="cb5-79"><a href="#cb5-79" aria-hidden="true" tabindex="-1"></a>  <span class="dt">x</span><span class="op">:</span> {<span class="dt">label</span><span class="op">:</span> <span class="kw">null</span><span class="op">,</span> <span class="dt">tickFormat</span><span class="op">:</span> d <span class="kw">=&gt;</span> <span class="vs">`</span><span class="sc">${</span>d<span class="sc">}</span><span class="vs">`</span>}<span class="op">,</span></span>
+<span id="cb5-80"><a href="#cb5-80" aria-hidden="true" tabindex="-1"></a>  <span class="dt">y</span><span class="op">:</span> {<span class="dt">grid</span><span class="op">:</span> <span class="kw">true</span><span class="op">,</span> <span class="dt">label</span><span class="op">:</span> <span class="st">"Tasa por 100.000 habitantes"</span>}<span class="op">,</span></span>
+<span id="cb5-81"><a href="#cb5-81" aria-hidden="true" tabindex="-1"></a>  <span class="dt">marks</span><span class="op">:</span> [</span>
+<span id="cb5-82"><a href="#cb5-82" aria-hidden="true" tabindex="-1"></a>    Plot<span class="op">.</span><span class="fu">ruleY</span>([<span class="dv">0</span>]<span class="op">,</span> {<span class="dt">stroke</span><span class="op">:</span> colorBase})<span class="op">,</span></span>
+<span id="cb5-83"><a href="#cb5-83" aria-hidden="true" tabindex="-1"></a>    Plot<span class="op">.</span><span class="fu">line</span>(serieFiltrada<span class="op">,</span> {<span class="dt">x</span><span class="op">:</span> <span class="st">"anio"</span><span class="op">,</span> <span class="dt">y</span><span class="op">:</span> <span class="st">"tasa_homicidios"</span><span class="op">,</span> <span class="dt">stroke</span><span class="op">:</span> colorSerie<span class="op">,</span> <span class="dt">strokeWidth</span><span class="op">:</span> <span class="dv">3</span><span class="op">,</span> <span class="dt">tip</span><span class="op">:</span> <span class="kw">true</span>})<span class="op">,</span></span>
+<span id="cb5-84"><a href="#cb5-84" aria-hidden="true" tabindex="-1"></a>    Plot<span class="op">.</span><span class="fu">dot</span>(serieFiltrada<span class="op">,</span> {<span class="dt">x</span><span class="op">:</span> <span class="st">"anio"</span><span class="op">,</span> <span class="dt">y</span><span class="op">:</span> <span class="st">"tasa_homicidios"</span><span class="op">,</span> <span class="dt">fill</span><span class="op">:</span> colorSerie<span class="op">,</span> <span class="dt">r</span><span class="op">:</span> <span class="dv">3</span><span class="op">,</span> <span class="dt">tip</span><span class="op">:</span> <span class="kw">true</span>})</span>
+<span id="cb5-85"><a href="#cb5-85" aria-hidden="true" tabindex="-1"></a>  ]</span>
+<span id="cb5-86"><a href="#cb5-86" aria-hidden="true" tabindex="-1"></a>})</span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display html-fill-item html-fill-container">
-<div id="ojs-cell-4" data-nodetype="expression" class="html-fill-item html-fill-container">
+<div id="ojs-cell-5" data-nodetype="expression" class="html-fill-item html-fill-container">
 
 </div>
 </div>
@@ -415,7 +450,7 @@ grid-auto-rows: minmax(0, 1fr);">
 <div class="card-body html-fill-item html-fill-container">
 <div class="quarto-figure quarto-figure-center html-fill-item html-fill-container">
 <figure class="figure">
-<p><img src="../posts/2026-07-homicidios-wb/outputs/figura_variaciones.svg" class="img-fluid figure-img" alt="Variaciones anuales de la tasa de homicidios en Ecuador; los mayores aumentos se concentran entre 2021 y 2023."></p>
+<p><img src="../posts/2026-07-homicidios-wb/outputs/figura_variaciones.svg" class="img-fluid figure-img" loading="lazy" alt="Variaciones anuales de la tasa de homicidios en Ecuador; los mayores aumentos se concentran entre 2021 y 2023."></p>
 <figcaption>Cambios frente al año anterior</figcaption>
 </figure>
 </div>
@@ -496,7 +531,7 @@ grid-auto-rows: minmax(0, 1fr);">
 <div class="card-body html-fill-item html-fill-container">
 <div class="quarto-figure quarto-figure-center html-fill-item html-fill-container">
 <figure class="figure">
-<p><img src="../posts/2026-07-homicidios-wb/outputs/figura_robustez.svg" class="img-fluid figure-img" alt="Comparación del BIC para fechas candidatas de quiebre; 2019 presenta el valor mínimo."></p>
+<p><img src="../posts/2026-07-homicidios-wb/outputs/figura_robustez.svg" class="img-fluid figure-img" loading="lazy" alt="Comparación del BIC para fechas candidatas de quiebre; 2019 presenta el valor mínimo."></p>
 <figcaption>BIC por año candidato</figcaption>
 </figure>
 </div>
@@ -545,7 +580,7 @@ API, snapshot, modelos y 7 pruebas versionados.</p>
 
 
 <script type="ojs-module-contents">
-eyJjb250ZW50cyI6W3sibWV0aG9kTmFtZSI6ImludGVycHJldCIsImNlbGxOYW1lIjoib2pzLWNlbGwtMSIsImlubGluZSI6ZmFsc2UsInNvdXJjZSI6InNlcmllQ29tcGxldGEgPSBGaWxlQXR0YWNobWVudChcIi4uL3Bvc3RzLzIwMjYtMDctaG9taWNpZGlvcy13Yi9kYXRhL2hvbWljaWRpb3NfZWN1YWRvcl93Yi5jc3ZcIikuY3N2KHt0eXBlZDogdHJ1ZX0pXHJcbnNlcmllRGFzaGJvYXJkID0gc2VyaWVDb21wbGV0YS5maWx0ZXIoZCA9PiBkLmFuaW8gPj0gMjAwNyAmJiBkLmFuaW8gPD0gMjAyMylcclxuIn0seyJtZXRob2ROYW1lIjoiaW50ZXJwcmV0IiwiY2VsbE5hbWUiOiJvanMtY2VsbC0yIiwiaW5saW5lIjpmYWxzZSwic291cmNlIjoidmlld29mIGRlc2RlID0gSW5wdXRzLnJhbmdlKFsyMDA3LCAyMDIzXSwge2xhYmVsOiBcIk1vc3RyYXIgZGVzZGVcIiwgc3RlcDogMSwgdmFsdWU6IDIwMDd9KVxyXG4ifSx7Im1ldGhvZE5hbWUiOiJpbnRlcnByZXQiLCJjZWxsTmFtZSI6Im9qcy1jZWxsLTMiLCJpbmxpbmUiOmZhbHNlLCJzb3VyY2UiOiJzZXJpZUZpbHRyYWRhID0gc2VyaWVEYXNoYm9hcmQuZmlsdGVyKGQgPT4gZC5hbmlvID49IGRlc2RlKVxyXG4ifSx7Im1ldGhvZE5hbWUiOiJpbnRlcnByZXQiLCJjZWxsTmFtZSI6Im9qcy1jZWxsLTQiLCJpbmxpbmUiOmZhbHNlLCJzb3VyY2UiOiJQbG90LnBsb3Qoe1xyXG4gIHdpZHRoLFxyXG4gIGhlaWdodDogMzYwLFxyXG4gIG1hcmdpbkxlZnQ6IDU4LFxyXG4gIG1hcmdpbkJvdHRvbTogNDIsXHJcbiAgc3R5bGU6IHtiYWNrZ3JvdW5kOiBcInRyYW5zcGFyZW50XCIsIGNvbG9yOiBcIiMxNTI2M0FcIiwgZm9udEZhbWlseTogXCJNYW5yb3BlLCBzYW5zLXNlcmlmXCJ9LFxyXG4gIHg6IHtsYWJlbDogbnVsbCwgdGlja0Zvcm1hdDogZCA9PiBgJHtkfWB9LFxyXG4gIHk6IHtncmlkOiB0cnVlLCBsYWJlbDogXCJUYXNhIHBvciAxMDAuMDAwIGhhYml0YW50ZXNcIn0sXHJcbiAgbWFya3M6IFtcclxuICAgIFBsb3QucnVsZVkoWzBdLCB7c3Ryb2tlOiBcIiNDRUQ5RTVcIn0pLFxyXG4gICAgUGxvdC5saW5lKHNlcmllRmlsdHJhZGEsIHt4OiBcImFuaW9cIiwgeTogXCJ0YXNhX2hvbWljaWRpb3NcIiwgc3Ryb2tlOiBcIiMwRjc2NkVcIiwgc3Ryb2tlV2lkdGg6IDMsIHRpcDogdHJ1ZX0pLFxyXG4gICAgUGxvdC5kb3Qoc2VyaWVGaWx0cmFkYSwge3g6IFwiYW5pb1wiLCB5OiBcInRhc2FfaG9taWNpZGlvc1wiLCBmaWxsOiBcIiMwRjc2NkVcIiwgcjogMywgdGlwOiB0cnVlfSlcclxuICBdXHJcbn0pXHJcbiJ9LHsibWV0aG9kTmFtZSI6ImludGVycHJldFF1aWV0Iiwic291cmNlIjoic2hpbnlJbnB1dCgnZGVzZGUnKSJ9XX0=
+eyJjb250ZW50cyI6W3sibWV0aG9kTmFtZSI6ImludGVycHJldCIsImNlbGxOYW1lIjoib2pzLWNlbGwtMSIsImlubGluZSI6ZmFsc2UsInNvdXJjZSI6InNlcmllQ29tcGxldGEgPSBGaWxlQXR0YWNobWVudChcIi4uL3Bvc3RzLzIwMjYtMDctaG9taWNpZGlvcy13Yi9kYXRhL2hvbWljaWRpb3NfZWN1YWRvcl93Yi5jc3ZcIikuY3N2KHt0eXBlZDogdHJ1ZX0pXHJcbnNlcmllRGFzaGJvYXJkID0gc2VyaWVDb21wbGV0YS5maWx0ZXIoZCA9PiBkLmFuaW8gPj0gMjAwNyAmJiBkLmFuaW8gPD0gMjAyMylcclxuIn0seyJtZXRob2ROYW1lIjoiaW50ZXJwcmV0IiwiY2VsbE5hbWUiOiJvanMtY2VsbC0yIiwiaW5saW5lIjpmYWxzZSwic291cmNlIjoidmlld29mIGRlc2RlID0gSW5wdXRzLnJhbmdlKFsyMDA3LCAyMDIzXSwge2xhYmVsOiBcIk1vc3RyYXIgZGVzZGVcIiwgc3RlcDogMSwgdmFsdWU6IDIwMDd9KVxyXG4ifSx7Im1ldGhvZE5hbWUiOiJpbnRlcnByZXQiLCJjZWxsTmFtZSI6Im9qcy1jZWxsLTMiLCJpbmxpbmUiOmZhbHNlLCJzb3VyY2UiOiJzZXJpZUZpbHRyYWRhID0gc2VyaWVEYXNoYm9hcmQuZmlsdGVyKGQgPT4gZC5hbmlvID49IGRlc2RlKVxyXG4ifSx7Im1ldGhvZE5hbWUiOiJpbnRlcnByZXQiLCJjZWxsTmFtZSI6Im9qcy1jZWxsLTQiLCJpbmxpbmUiOmZhbHNlLCJzb3VyY2UiOiIvLyBDb2xvcmVzIGRlIG1hcmNhIGxlw61kb3MgZGUgbG9zIHRva2VucyAtLWFkci0qIGRlIGRhc2hib2FyZC5jc3MsIGNvblxyXG4vLyBmYWxsYmFjayBhbCBoZXggY2Fuw7NuaWNvIHBvciByb2J1c3Rlei4gTnVuY2EgaGV4IGFqZW5vcyBhIGxhIHBhbGV0YS5cclxudG9rZW4gPSAobmFtZSwgZmFsbGJhY2spID0+XHJcbiAgZ2V0Q29tcHV0ZWRTdHlsZShkb2N1bWVudC5kb2N1bWVudEVsZW1lbnQpLmdldFByb3BlcnR5VmFsdWUobmFtZSkudHJpbSgpIHx8IGZhbGxiYWNrXHJcbmNvbG9yU2VyaWUgPSB0b2tlbihcIi0tYWRyLWN5YW4tNjAwXCIsIFwiIzAwN2Y5ZVwiKVxyXG5jb2xvckVqZXMgPSB0b2tlbihcIi0tYWRyLWlua1wiLCBcIiMxNzI2M2FcIilcclxuY29sb3JCYXNlID0gdG9rZW4oXCItLWFkci1saW5lXCIsIFwiI2Q3ZTBlYVwiKVxyXG4ifSx7Im1ldGhvZE5hbWUiOiJpbnRlcnByZXQiLCJjZWxsTmFtZSI6Im9qcy1jZWxsLTUiLCJpbmxpbmUiOmZhbHNlLCJzb3VyY2UiOiJQbG90LnBsb3Qoe1xyXG4gIHdpZHRoLFxyXG4gIGhlaWdodDogMzYwLFxyXG4gIG1hcmdpbkxlZnQ6IDU4LFxyXG4gIG1hcmdpbkJvdHRvbTogNDIsXHJcbiAgc3R5bGU6IHtiYWNrZ3JvdW5kOiBcInRyYW5zcGFyZW50XCIsIGNvbG9yOiBjb2xvckVqZXMsIGZvbnRGYW1pbHk6IFwiTWFucm9wZSwgc2Fucy1zZXJpZlwifSxcclxuICB4OiB7bGFiZWw6IG51bGwsIHRpY2tGb3JtYXQ6IGQgPT4gYCR7ZH1gfSxcclxuICB5OiB7Z3JpZDogdHJ1ZSwgbGFiZWw6IFwiVGFzYSBwb3IgMTAwLjAwMCBoYWJpdGFudGVzXCJ9LFxyXG4gIG1hcmtzOiBbXHJcbiAgICBQbG90LnJ1bGVZKFswXSwge3N0cm9rZTogY29sb3JCYXNlfSksXHJcbiAgICBQbG90LmxpbmUoc2VyaWVGaWx0cmFkYSwge3g6IFwiYW5pb1wiLCB5OiBcInRhc2FfaG9taWNpZGlvc1wiLCBzdHJva2U6IGNvbG9yU2VyaWUsIHN0cm9rZVdpZHRoOiAzLCB0aXA6IHRydWV9KSxcclxuICAgIFBsb3QuZG90KHNlcmllRmlsdHJhZGEsIHt4OiBcImFuaW9cIiwgeTogXCJ0YXNhX2hvbWljaWRpb3NcIiwgZmlsbDogY29sb3JTZXJpZSwgcjogMywgdGlwOiB0cnVlfSlcclxuICBdXHJcbn0pXHJcbiJ9LHsibWV0aG9kTmFtZSI6ImludGVycHJldFF1aWV0Iiwic291cmNlIjoic2hpbnlJbnB1dCgnZGVzZGUnKSJ9XX0=
 </script>
 <script type="module">
 if (window.location.protocol === "file:") { alert("The OJS runtime does not work with file:// URLs. Please use a web server to view this document."); }

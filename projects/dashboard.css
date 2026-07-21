@@ -1,19 +1,47 @@
 @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap");
 
 :root {
-  --bi-navy-950: #071b33;
-  --bi-navy-900: #0a2446;
-  --bi-blue-700: #123b7a;
-  --bi-cyan-500: #18a9c1;
-  --bi-cyan-100: #e7f6f8;
-  --bi-surface: #ffffff;
+  /* Tokens de marca — SINCRONIZADOS CON styles.scss (fuente de verdad).
+     format: dashboard no carga el tema del sitio, por eso se re-declaran aquí.
+     No editar valores en este bloque: si la marca cambia, cambia primero
+     styles.scss y se copia 1:1. */
+  --adr-navy-950: #071b33;
+  --adr-navy-900: #0a2446;
+  --adr-blue-800: #123b7a;
+  --adr-blue-600: #175ca8;
+  --adr-cyan-600: #007f9e;
+  --adr-cyan-400: #18a9c1;
+  --adr-gold-600: #a66f08;
+  --adr-gold-400: #d9a63a;
+  --adr-surface: #ffffff;
+  --adr-ink: #17263a;
+  --adr-muted: #586a7e;
+  --adr-line: #d7e0ea;
+  --adr-soft-blue: #eaf1f9;
+  --adr-soft-cyan: #e7f6f8;
+  --adr-danger: #b83b4b;
+  --adr-success: #21765b;
+
+  /* Alias del dashboard: siempre apuntan a un token --adr-*. */
+  --bi-navy-950: var(--adr-navy-950);
+  --bi-navy-900: var(--adr-navy-900);
+  --bi-blue-700: var(--adr-blue-800);
+  --bi-cyan-500: var(--adr-cyan-400);
+  --bi-cyan-100: var(--adr-soft-cyan);
+  --bi-surface: var(--adr-surface);
+  --bi-ink: var(--adr-ink);
+  --bi-muted: var(--adr-muted);
+  --bi-line: var(--adr-line);
+  --bi-gold: var(--adr-gold-400);
+  --bi-danger: var(--adr-danger);
+  --bi-success: var(--adr-success);
+
+  /* Tokens locales del dashboard (sin equivalente en la marca, deliberados):
+     canvas ligeramente más frío que --adr-soft-blue para separar tarjetas,
+     y dos claros legibles sobre fondo --adr-blue-800. */
   --bi-canvas: #eef3f8;
-  --bi-ink: #15263a;
-  --bi-muted: #5a6c80;
-  --bi-line: #ced9e5;
-  --bi-gold: #d9a63a;
-  --bi-danger: #b83b4b;
-  --bi-success: #21765b;
+  --bi-on-blue-cyan: #9fe0ea;
+  --bi-on-blue-soft: #d2e0ee;
   --bi-shadow: 0 5px 16px rgba(7, 27, 51, .075);
 }
 
@@ -31,7 +59,7 @@ body {
 
 a:focus-visible,
 button:focus-visible {
-  outline: 3px solid #0b6e8a;
+  outline: 3px solid var(--adr-cyan-600);
   outline-offset: 2px;
   box-shadow: 0 0 0 2px #fff;
 }
@@ -91,7 +119,7 @@ button:focus-visible {
 }
 
 .dashboard-commandbar__identity span {
-  color: #9fe0ea;
+  color: var(--bi-on-blue-cyan);
   font-size: 10px;
   font-weight: 800;
   letter-spacing: .14em;
@@ -104,7 +132,7 @@ button:focus-visible {
 
 .dashboard-commandbar__identity small {
   margin-top: 2px;
-  color: #d2e0ee;
+  color: var(--bi-on-blue-soft);
   font-size: 10px;
 }
 
