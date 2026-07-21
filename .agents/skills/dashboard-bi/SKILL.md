@@ -27,6 +27,7 @@ El tablero traduce una investigación ya desarrollada a lectura de decisión: un
 - **Ningún control decorativo.** Un filtro visible debe modificar una vista; si el gráfico no puede responder, se muestra contexto estático. Un filtro simulado destruye la credibilidad de todo el portafolio.
 - Datos vía `FileAttachment` (OJS) o includes desde los outputs del caso — la misma fuente que el artículo, para que ambos ejes digan siempre lo mismo.
 - Cifras tabulares (`tabular-nums`), cian para datos e interacción, dorado solo para el vínculo metodológico.
+- **Colores solo desde tokens de marca.** `format: dashboard` no carga `styles.scss`, por eso `dashboard.css` declara en `:root` una copia sincronizada de los tokens `--adr-*` (fuente de verdad: `styles.scss`) y los alias `--bi-*` apuntan a ellos. Los gráficos OJS leen los tokens en runtime — `token = (name, fallback) => getComputedStyle(document.documentElement).getPropertyValue(name).trim() || fallback` — con fallback al hex canónico. Nunca un hex ajeno a la paleta: un color fuera de marca en el gráfico estrella contradice todo el sistema visual.
 - Fecha de actualización y cobertura siempre visibles; nada de fechas ambiguas.
 - Hover aporta el valor exacto, pero la lectura central no depende del hover (accesibilidad y móvil).
 - Sin párrafos académicos dentro de tarjetas: la profundidad vive en el artículo, aquí viven la señal y el límite.

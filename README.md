@@ -10,7 +10,7 @@ Sitio web personal y portafolio de proyectos de **Alan Del Rosario** — econom�
 Positron/Obsidian (Markdown + R) → Git/GitHub → Quarto → GitHub Pages
 ```
 
-Este repositorio contiene únicamente el **sitio web** (páginas, posts, perfil). Cada investigación vive en su propio repositorio independiente (`proj-*`) y se vincula desde aquí.
+Este repositorio contiene el sitio web **y** el espacio de análisis reproducible de cada caso. Hay dos espacios de trabajo claramente separados — el **artesanal** (`posts/<slug>/`: data, scripts, tests, outputs) y el **refinado** (`projects/*.qmd`: la narrativa publicable que consume esos outputs). El mapa completo está en [`_gobernanza/DONDE_TRABAJO.md`](_gobernanza/DONDE_TRABAJO.md).
 
 ## Estructura
 
@@ -22,6 +22,7 @@ Este repositorio contiene únicamente el **sitio web** (páginas, posts, perfil)
 - `posts/` — blog de análisis rápidos (una carpeta por post, con sus datos)
 - `design-system/` — tokens, componentes y overrides de página
 - `_plantillas/portafolio/` — trío copiable Caso/Research/BI
+- `_plantillas/analisis/` — andamiaje del espacio artesanal (scripts, tests, reproducir.ps1)
 - `_quarto.yml` — configuración del sitio
 - `styles.scss` — estilos propios
 - `_gobernanza/` — plan maestro, protocolo de calidad económica/econométrica, checklist de publicación y roles del equipo IA

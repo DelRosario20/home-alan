@@ -7,7 +7,7 @@ Principio de diseño: **los procesos se escriben para el trabajador de menor cap
 | Agente | Rol | Responsabilidades | NO hace |
 |---|---|---|---|
 | **Claude** | Gerente general / editor | Arquitectura del sistema, redacción final, revisión metodológica, decisiones de estructura, verificación de números | Publicar sin aprobación de Alan |
-| **Antigravity** | Gestor de repositorio / QA | Control de versiones, renders completos, validación de links, migraciones mecánicas, vincular carpetas de proyectos en su workspace, hacer cumplir `.gitignore` | Rediseñar contenido por su cuenta; push sin orden |
+| **Antigravity** | Gestor de repositorio / QA | Control de versiones, renders completos, validación de links, migraciones mecánicas, vincular carpetas de proyectos en su workspace, hacer cumplir `.gitignore`, **ejecutar el deploy a `gh-pages` según el runbook del `CHECKLIST_PUBLICACION.md`** | Rediseñar contenido por su cuenta; push sin orden; publicar sin checklist completo y aprobación de Alan |
 | **Codex** | I+D / ideación | Búsqueda de referencias, brainstorm de temas para posts, exploración de herramientas/extensiones existentes ("ensamblar, no fabricar") | Modificar archivos del sitio sin tarea asignada |
 | **Alan** | Dueño / director | Decisión final SIEMPRE: aprueba publicaciones, define estilo, firma todo | Delegar la aprobación final |
 

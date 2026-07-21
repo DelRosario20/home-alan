@@ -108,13 +108,14 @@ El diseño nunca oculta estos estados. “Render correcto” no significa “pub
 
 ## 6. Alta de un nuevo caso
 
-1. Copiar los tres archivos de `_plantillas/portafolio/` y reemplazar `<slug>`.
-2. Añadir `<slug>.qmd` al listing de `projects/index.qmd`.
-3. Investigación y Tableros entran automáticamente a sus catálogos por el sufijo del archivo.
-4. Conectar los mismos outputs generados en ambos productos.
-5. Renderizar, revisar 375/768/1024/1440 px y ejecutar cuatro ojos.
-6. Mantener `draft: true` y el aviso editorial hasta aprobación explícita de Alan.
-7. Cambiar a `draft: false` únicamente después de checklist y aprobación; `draft-mode: gone` excluye borradores del render de producción.
+1. Crear el espacio artesanal copiando `_plantillas/analisis/` a `posts/<slug-largo>/` (convención `AAAA-MM-<tema>-<fuente>`). **El nombre de esa carpeta es inmutable tras el alta**: las páginas de `projects/` la referencian con rutas relativas y renombrarla rompe la tríada en silencio.
+2. Copiar los tres archivos de `_plantillas/portafolio/` y reemplazar `<slug>`.
+3. Añadir `<slug>.qmd` al listing de `projects/index.qmd`.
+4. Investigación y Tableros entran automáticamente a sus catálogos por el sufijo del archivo.
+5. Conectar los mismos outputs generados en ambos productos.
+6. Renderizar, revisar 375/768/1024/1440 px y ejecutar cuatro ojos.
+7. Mantener `draft: true` y el aviso editorial hasta aprobación explícita de Alan.
+8. Cambiar a `draft: false` únicamente después de checklist y aprobación; `draft-mode: gone` excluye borradores del render de producción.
 
 ## 7. Responsabilidad de contenido
 

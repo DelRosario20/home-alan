@@ -9,7 +9,8 @@ Todo agente (Claude, Codex, Antigravity, o cualquier modelo futuro) que trabaje 
 3. `_gobernanza/CHECKLIST_PUBLICACION.md` — puerta final antes de publicar
 4. `_gobernanza/PLAN_MAESTRO.md` — arquitectura y hoja de ruta del sistema
 5. `_gobernanza/ROLES_IA.md` — quién hace qué
-6. Este archivo
+6. `_gobernanza/DONDE_TRABAJO.md` — mapa de los dos espacios de trabajo (artesanal vs. refinado) y reglas operativas del repo
+7. Este archivo
 
 ## Reglas duras (aplican SIEMPRE, sin excepción)
 
@@ -26,7 +27,7 @@ Todo agente (Claude, Codex, Antigravity, o cualquier modelo futuro) que trabaje 
 
 El flujo "una idea → dos ejes" está operacionalizado en tres skills versionadas en `.agents/skills/` (espejo operativo para Claude Code en `.claude/skills/`, fuera de git):
 
-- `nuevo-caso` — alta de la tríada caso + investigación + tablero.
+- `nuevo-caso` — alta de la tríada caso + investigación + tablero y del espacio artesanal (`posts/<slug>/` desde `_plantillas/analisis/`).
 - `articulo-academico` — eje académico, estilo boletín analítico del BCE.
 - `dashboard-bi` — eje ejecutivo, estilo IRE del MEF.
 
