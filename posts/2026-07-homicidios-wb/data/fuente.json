@@ -4,7 +4,7 @@
   "definicion": "Intentional homicides (per 100,000 people)",
   "pais": "Ecuador (ECU)",
   "url_api": "https://api.worldbank.org/v2/country/ECU/indicator/VC.IHR.PSRC.P5?format=json&per_page=100&date=2000:2025",
-  "fecha_descarga_utc": "2026-07-19T22:24:58+00:00",
+  "fecha_descarga_utc": "2026-07-21T16:16:45+00:00",
   "api_ultima_actualizacion": "2026-07-13",
   "periodo_solicitado": "2000–2025",
   "observaciones_no_nulas": 20,
