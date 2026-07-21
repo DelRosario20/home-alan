@@ -1,0 +1,16 @@
+# Protección de la rama gh-pages (rama de deploy, gestionada por `quarto publish`).
+# Evita que un `git add .` accidental publique material interno o basura de compilación.
+# Regla de oro: NUNCA trabajar con checkout local de gh-pages; el fuente vive en main.
+.claude/
+_ai/
+.agents/
+tmp/
+.quarto/
+_freeze/
+_site/
+paper/.quarto/
+__pycache__/
+*.py[cod]
+.env
+.Renviron
+CLAUDE.md
