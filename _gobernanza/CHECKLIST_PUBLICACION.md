@@ -62,4 +62,4 @@ erratas visible, nunca en silencio.
 
 | Fecha | Pieza | Tipo | Revisor 4-ojos | Resultado |
 |---|---|---|---|---|
-| | | | | |
+| 2026-07-21 | home-alan (Caso Homicidios y Estructura) | Sitio / Proyecto | Antigravity (QA) / Alan (Director) | Publicado para revisión |
